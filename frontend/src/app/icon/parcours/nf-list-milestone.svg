@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">Forged Frame</title>
+  <desc id="desc">Marqueur de liste NeoForge Cutline, version bicolore.</desc>
+
+  <g transform="translate(2 2) translate(12 12) skewX(-4) translate(-12 -12)">
+    <g transform="translate(-.85 .85)" fill="none" stroke="var(--nf-cut-accent, #08B2E3)" stroke-width="2.15" stroke-linecap="square" stroke-linejoin="bevel" opacity=".38">
+      <path d="M5 9V5h10l5 5v10H9l-4-4v-3"/>
+    </g>
+    <g fill="none" stroke="var(--nf-cut-main, #EEE5E9)" stroke-width="1.55" stroke-linecap="square" stroke-linejoin="bevel">
+      <path d="M5 9V5h10l5 5v10H9l-4-4v-3"/>
+    </g>
+  </g>
+  
+      <path d="M19 3h5v5ZM3 19v5h5" fill="none" stroke="var(--nf-cut-accent, #08B2E3)" stroke-width="1.8" stroke-linejoin="bevel"/>
+
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">Double Cut</title>
+  <desc id="desc">Marqueur de liste NeoForge Cutline, version bicolore.</desc>
+
+  <g transform="translate(2 2) translate(12 12) skewX(-4) translate(-12 -12)">
+    <g transform="translate(-.85 .85)" fill="none" stroke="var(--nf-cut-accent, #08B2E3)" stroke-width="2.15" stroke-linecap="square" stroke-linejoin="bevel" opacity=".38">
+      <path d="m6 5 7 7-7 7M12 5l7 7-7 7"/>
+    </g>
+    <g fill="none" stroke="var(--nf-cut-main, #EEE5E9)" stroke-width="1.55" stroke-linecap="square" stroke-linejoin="bevel">
+      <path d="m6 5 7 7-7 7M12 5l7 7-7 7"/>
+    </g>
+  </g>
+  
+      <path d="m3 7 2-2M3 12l2-2M3 17l2-2" fill="none" stroke="var(--nf-cut-accent, #08B2E3)" stroke-width="1.8" stroke-linecap="square"/>
+
+</svg>

@@ -1,1 +1,20 @@
-<p>navbar works!</p>
+<header class="site-header">
+  <nav class="nav-shell" aria-label="Navigation principale">
+    <a class="brand" href="#accueil" (click)="closeMenu()" aria-label="NeoForge, retour à l'accueil">
+      <app-icon name="marque/neoforge-mark-primary" />
+      <span>NEO<span class="brand-accent">FORGE</span></span>
+    </a>
+    <button class="menu-toggle" type="button" [attr.aria-expanded]="menuOpen()" aria-controls="nav-links"
+      aria-label="Afficher ou masquer le menu" (click)="toggleMenu()">
+      <app-icon [name]="menuOpen() ? 'navigation/close' : 'navigation/menu'" />
+    </button>
+    <div id="nav-links" class="nav-links" [class.is-open]="menuOpen()">
+      <a href="#accueil" (click)="closeMenu()">Accueil</a>
+      <a href="#projets" (click)="closeMenu()">Projets</a>
+      <a href="#expertises" (click)="closeMenu()">Expertises</a>
+      <a href="#parcours" (click)="closeMenu()">Parcours</a>
+      <a href="#services" (click)="closeMenu()">Services</a>
+      <a class="contact-link" href="#contact" (click)="closeMenu()">Contact <span aria-hidden="true">↗</span></a>
+    </div>
+  </nav>
+</header>

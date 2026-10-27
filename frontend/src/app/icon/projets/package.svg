@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+  viewBox="0 0 28 28" fill="none" role="img"
+  aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">Colis</title>
+  <desc id="desc">Pictogramme NeoForge Crystal autonome aux couleurs de la marque.</desc>
+  <g>
+    <g transform="translate(2 2) translate(12 12) skewX(-3.5) translate(-12 -12) translate(-.75 .9)" fill="none" stroke="#04789B" stroke-width="2.3"
+      stroke-linecap="square" stroke-linejoin="bevel" opacity=".72">
+      <path d="m12 2 9 5v10l-9 5-9-5V7Z"/><path d="m3 7 9 5 9-5M12 12v10M7 4.8l9 5"/>
+    </g>
+    <g transform="translate(2 2) translate(12 12) skewX(-3.5) translate(-12 -12)" fill="none" stroke="#EEE5E9" stroke-width="1.42"
+      stroke-linecap="square" stroke-linejoin="bevel">
+      <path d="m12 2 9 5v10l-9 5-9-5V7Z"/><path d="m3 7 9 5 9-5M12 12v10M7 4.8l9 5"/>
+    </g>
+    <g fill="#08B2E3" stroke="#08B2E3" stroke-width="1.65"
+      stroke-linecap="square" stroke-linejoin="bevel">
+      <path d="m24 21 2 2-2 2-2-2Z" stroke="none"/>
+    </g>
+  </g>
+</svg>

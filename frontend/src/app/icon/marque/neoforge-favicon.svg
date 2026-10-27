@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="250 70 820 1080" fill="none"
+  role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">NeoForge — favicon</title>
+  <desc id="desc">Favicon NeoForge simplifié et recadré pour rester lisible à petite taille.</desc>
+  <defs>
+    <linearGradient id="favicon-gradient" x1="322" y1="1070" x2="1002" y2="132"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#003D52"/>
+      <stop offset=".5" stop-color="#04789B"/>
+      <stop offset="1" stop-color="#08B2E3"/>
+    </linearGradient>
+  </defs>
+  <path d="M660 132 790 261 1002 261 1002 389 805 390 805 472 955 473 955 593 805 598 805 877 614 1070 322 760 322 264 398 264 561 434 562 231ZM672 246 672 545 690 562 691 357 738 311ZM428 457 428 686 611 867 691 787 691 764 626 699 563 757 562 634 516 590 513 542Z" fill="url(#favicon-gradient)" fill-rule="evenodd"
+    stroke="#003D52" stroke-width="24" stroke-linejoin="miter"/>
+</svg>

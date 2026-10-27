@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56"
+  viewBox="0 0 56 56" fill="none" role="img"
+  aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">Accessibilité — badge NeoForge</title>
+  <desc id="desc">Badge NeoForge Crystal à double contour et facette lumineuse.</desc>
+  <defs>
+    <linearGradient id="nf-badge-surface" x1="4" y1="52" x2="52" y2="4">
+      <stop stop-color="#021820"/>
+      <stop offset="1" stop-color="#003D52"/>
+    </linearGradient>
+  </defs>
+  <path d="M9 2H42L54 14V42L42 54H9L2 47V9Z"
+    fill="url(#nf-badge-surface)" stroke="#003D52" stroke-width="2"
+    stroke-linejoin="bevel"/>
+  <path d="M10 4H41L51 14V41L41 51H10L5 46V10Z"
+    fill="none" stroke="#08B2E3" stroke-width=".75" stroke-opacity=".58"/>
+  <path d="M42 2H54V14Z" fill="#08B2E3" fill-opacity=".9"/>
+  <path d="M42 2 48 8H42Z" fill="#EEE5E9" fill-opacity=".72"/>
+  <path d="M2 39v8l7 7h8" fill="none" stroke="#08B2E3" stroke-width="1.4"/>
+  <g transform="translate(8.25 8.15) scale(1.34)">
+    <g transform="translate(2 2) translate(12 12) skewX(-3.5) translate(-12 -12) translate(-.75 .9)" fill="none" stroke="#04789B" stroke-width="2.3"
+      stroke-linecap="square" stroke-linejoin="bevel" opacity=".72">
+      <circle cx="12" cy="4.5" r="2"/><path d="M4 8h16M12 7v6M8 21l4-8 4 8M8 10l-3 6M16 10l3 6"/>
+    </g>
+    <g transform="translate(2 2) translate(12 12) skewX(-3.5) translate(-12 -12)" fill="none" stroke="#EEE5E9" stroke-width="1.42"
+      stroke-linecap="square" stroke-linejoin="bevel">
+      <circle cx="12" cy="4.5" r="2"/><path d="M4 8h16M12 7v6M8 21l4-8 4 8M8 10l-3 6M16 10l3 6"/>
+    </g>
+    <g fill="#08B2E3" stroke="#08B2E3" stroke-width="1.65"
+      stroke-linecap="square" stroke-linejoin="bevel">
+      <path d="m2 9 2-2M2 13l2-2M2 17l2-2" fill="none"/>
+    </g>
+  </g>
+</svg>

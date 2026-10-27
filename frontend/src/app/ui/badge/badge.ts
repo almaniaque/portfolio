@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-badge',
-  styleUrl: './badge.css',
+  standalone: true,
   templateUrl: './badge.html',
+  styleUrl: './badge.css',
 })
-export class Badge {}
+export class Badge {
+  @Input({ required: true }) text = '';
+  @Input() tone: 'purple' | 'cyan' | 'muted' = 'purple';
+}

@@ -1,12 +1,25 @@
 import { Component } from '@angular/core';
 import { AnimatedSilkComponent } from '../../ui/animated-silk/animated-silk.component';
+import { Navbar } from '../../layout/navbar/navbar';
+import { Footer } from '../../layout/footer/footer';
+import { Button } from '../../ui/button/button';
+import { Card } from '../../ui/card/card';
+import { Badge } from '../../ui/badge/badge';
+import { Icon } from '../../ui/icon/icon';
 
 @Component({
-  imports: [
-    AnimatedSilkComponent,
-  ],
   selector: 'app-main-page',
-  styleUrl: './main-page.css',
+  standalone: true,
+  imports: [
+    AnimatedSilkComponent, 
+    Navbar,
+    Footer, 
+    Button, 
+    Card, 
+    Badge, 
+    Icon
+  ],
   templateUrl: './main-page.html',
+  styleUrl: './main-page.css',
 })
-export class MainPage { }
+export class MainPage {}

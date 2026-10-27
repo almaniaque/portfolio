@@ -1,1 +1,565 @@
-/* You can add global styles to this file, and also import other style files */
+/* Styles globaux légers : les sections restent encapsulées dans leurs composants Angular. */
+:root {
+    color-scheme: dark;
+    font-family: Inter, 'Segoe UI', Arial, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: #080914;
+}
+
+::selection {
+    background: #825cff;
+    color: #fff;
+}
+
+:focus-visible {
+    outline: 2px solid #ae9bff;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Sections NeoForge : classes propres à la page, sans modifier les composants du projet. */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.4rem;
+}
+
+.project {
+    overflow: hidden;
+    background: #111221;
+    border: 1px solid #77749b3a;
+    border-radius: 19px;
+}
+
+.project-art {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 280px;
+    padding: 34px;
+    overflow: hidden;
+}
+
+.project-art--accord {
+    background: radial-gradient(ellipse at 60% 90%, #6346b67a, transparent 70%), linear-gradient(135deg, #151228, #080d21);
+}
+
+.mock-window {
+    width: min(370px, 100%);
+    height: 210px;
+    border: 1px solid #9088c47a;
+    border-radius: 10px;
+    background: #0a0d1e;
+    box-shadow: 0 20px 65px #000a;
+    transform: rotate(-4deg) translateY(17px);
+    overflow: hidden;
+}
+
+.mock-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 28px;
+    border-bottom: 1px solid #8587ae30;
+    padding: 0 10px;
+}
+
+.mock-header i {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #997fc2;
+}
+
+.mock-header span {
+    font: 500 8px monospace;
+    letter-spacing: 1px;
+    color: #a4a5c9;
+    margin-left: 10px;
+}
+
+.mock-body {
+    display: flex;
+    height: 100%;
+}
+
+.mock-side {
+    width: 65px;
+    border-right: 1px solid #8587ae26;
+    background: linear-gradient(#17172d, #090d20);
+}
+
+.mock-main {
+    flex: 1;
+    padding: 16px;
+}
+
+.mock-title {
+    width: 55%;
+    height: 10px;
+    border-radius: 3px;
+    background: #9b8fe579;
+}
+
+.mock-tiles {
+    display: flex;
+    gap: 8px;
+    margin: 13px 0;
+}
+
+.mock-tiles b {
+    flex: 1;
+    height: 43px;
+    border: 1px solid #b3a6ff45;
+    background: #40365e66;
+    border-radius: 4px;
+}
+
+.mock-chart {
+    height: 76px;
+    display: flex;
+    align-items: flex-end;
+    gap: 9px;
+    border-bottom: 1px solid #6f83b356;
+}
+
+.mock-chart span {
+    flex: 1;
+    height: 30%;
+    background: linear-gradient(#a08bff, #5c51ce);
+    opacity: .75;
+    border-radius: 3px 3px 0 0;
+}
+
+.mock-chart span:nth-child(2) {
+    height: 60%;
+}
+
+.mock-chart span:nth-child(3) {
+    height: 42%;
+}
+
+.mock-chart span:nth-child(4) {
+    height: 83%;
+}
+
+.mock-chart span:nth-child(5) {
+    height: 64%;
+}
+
+.mock-chart span:nth-child(6) {
+    height: 95%;
+}
+
+.mock-chart span:nth-child(7) {
+    height: 72%;
+}
+
+.project-art--nexus {
+    background: radial-gradient(ellipse at 50% 70%, #127fa65a, transparent 70%), linear-gradient(135deg, #081220, #121223);
+}
+
+.terminal-window {
+    width: min(390px, 100%);
+    border: 1px solid #64b5d65b;
+    border-radius: 10px;
+    box-shadow: 0 22px 65px #0009;
+    transform: rotate(3deg) translateY(12px);
+    background: #070e19;
+}
+
+.terminal-head {
+    padding: 12px;
+    border-bottom: 1px solid #5c809145;
+    color: #82cde0;
+    font: 10px monospace;
+    letter-spacing: 1px;
+}
+
+.terminal-led {
+    display: inline-block;
+    margin-right: 8px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #5de6d1;
+    box-shadow: 0 0 10px #5de6d1;
+}
+
+.terminal-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 24px;
+    color: #a2b8ce;
+    font: 11px monospace;
+}
+
+.line-purple {
+    color: #af9aff;
+}
+
+.line-cyan {
+    color: #69eacb;
+}
+
+.terminal-cursor {
+    color: #9a96ff;
+}
+
+.project-content {
+    padding: 26px;
+}
+
+.project-num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8rem;
+}
+
+.project-num>span {
+    color: #9a9cb8;
+    font-size: .62rem;
+    font-weight: 800;
+    letter-spacing: .17em;
+}
+
+.project-content h3 {
+    font-size: 1.55rem;
+    margin: 18px 0 8px;
+}
+
+.project-content p {
+    max-width: 435px;
+    color: #a9aabe;
+    line-height: 1.7;
+    margin: 0;
+    font-size: .85rem;
+}
+
+.project-more {
+    display: inline-flex;
+    gap: .55rem;
+    align-items: center;
+    margin-top: 1.6rem;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 750;
+    color: #c5afff;
+}
+
+.project-more:hover {
+    color: #fff;
+}
+
+.project-more app-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.project--wide {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project--wide .project-art {
+    height: 100%;
+    min-height: 260px;
+}
+
+.project-art--forge {
+    display: flex;
+    gap: 1rem;
+    background: radial-gradient(ellipse at center, #42236775, transparent 65%), linear-gradient(120deg, #0f112b, #151121);
+}
+
+.project-art--forge app-icon {
+    width: 115px;
+    height: 115px;
+    z-index: 1;
+}
+
+.forge-wordmark {
+    font-size: clamp(1.4rem, 3vw, 2.7rem);
+    letter-spacing: .16em;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.forge-halo {
+    position: absolute;
+    border: 1px solid #827cdd8c;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    box-shadow: 0 0 55px #7667e04c;
+}
+
+.journey-section {
+    background: radial-gradient(ellipse at 18% 40%, #29205d46, transparent 50%), #090a16;
+}
+
+.journey-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.journey-lead {
+    max-width: 410px;
+    color: #b1b2cc;
+    line-height: 1.8;
+    margin-top: 2rem;
+    font-size: .95rem;
+}
+
+.journey-steps {
+    position: relative;
+    border-left: 1px solid #7b6cce6e;
+    margin-left: 8px;
+    padding: 8px 0 8px 35px;
+}
+
+.journey-step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 16px;
+    padding: 0 0 37px;
+}
+
+.journey-step:last-child {
+    padding-bottom: 0;
+}
+
+.journey-step::before {
+    content: '';
+    position: absolute;
+    left: -41px;
+    top: 7px;
+    height: 11px;
+    width: 11px;
+    border: 2px solid #a78bfa;
+    border-radius: 50%;
+    background: #080915;
+    box-shadow: 0 0 20px #9b84f96b;
+}
+
+.journey-step>span {
+    font: 700 .8rem monospace;
+    color: #aa91ff;
+}
+
+.journey-step h3 {
+    margin: 0 0 8px;
+    font-size: 1.08rem;
+}
+
+.journey-step p {
+    color: #aaabc3;
+    line-height: 1.65;
+    margin: 0;
+    font-size: .84rem;
+}
+
+.services-section {
+    background: #0c0c19;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.service-line {
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 14px;
+    position: relative;
+    padding: 22px;
+    border: 1px solid #7d72aa3b;
+    border-radius: 12px;
+    background: #131324;
+}
+
+.service-line app-icon {
+    width: 31px;
+    height: 31px;
+}
+
+.service-line h3 {
+    margin: 0 0 9px;
+    font-size: 1rem;
+}
+
+.service-line p {
+    margin: 0;
+    color: #a2a4bc;
+    font-size: .79rem;
+    line-height: 1.7;
+}
+
+.service-line>span {
+    position: absolute;
+    right: 20px;
+    top: 21px;
+    color: #8b80bd;
+    font: 700 .72rem monospace;
+}
+
+.contact-section {
+    position: relative;
+    isolation: isolate;
+    padding: 115px 0;
+    text-align: center;
+    overflow: hidden;
+    background: #0a0919;
+}
+
+.contact-glow {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 85%, #6c46b451, transparent 60%);
+}
+
+.contact-wrap .eyebrow {
+    justify-content: center;
+}
+
+.contact-wrap>p:not(.eyebrow) {
+    margin: 1.7rem auto 0;
+    color: #b6b5c9;
+    max-width: 470px;
+    line-height: 1.75;
+}
+
+.contact-wrap .contact-placeholder {
+    padding: .8rem 1rem;
+    border: 1px dashed #7d78a77c;
+    border-radius: 8px;
+    color: #a9a2c8 !important;
+    font-size: .79rem;
+    max-width: 510px !important;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 24px;
+    color: #cbbcff;
+    text-decoration: none;
+    font-size: .85rem;
+}
+
+/* Expertise, projets et sections inférieures. */
+.content-section {
+    padding: 118px 0;
+    scroll-margin-top: 25px;
+}
+
+.expertise-section {
+    background: radial-gradient(ellipse at 90% 5%, #271d512b, transparent 45%), #090a16;
+}
+
+.section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.section-heading h2,
+.journey-layout h2,
+.contact-wrap h2 {
+    margin: 0;
+    font-size: clamp(2.35rem, 4.7vw, 4.5rem);
+    line-height: 1.06;
+    letter-spacing: -.048em;
+}
+
+.section-intro {
+    max-width: 330px;
+    margin: 0 0 .3rem;
+    color: #a7a9c1;
+    font-size: .95rem;
+    line-height: 1.75;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.expertise-icon {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #9e81ff37;
+    border-radius: 13px;
+    background: #7c5cff17;
+    margin-bottom: 1.6rem;
+}
+
+.expertise-icon app-icon {
+    width: 29px;
+    height: 29px;
+}
+
+.expertise-grid h3 {
+    margin: 0 0 .7rem;
+    font-size: 1.1rem;
+}
+
+.expertise-grid p {
+    min-height: 105px;
+    margin: 0;
+    color: #a8aac3;
+    line-height: 1.75;
+    font-size: .82rem;
+}
+
+.tech-pills,
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin-top: 1.5rem;
+}
+
+.tech-pills span,
+.project-tags span {
+    display: inline-block;
+    color: #bab6da;
+    font-size: .67rem;
+    padding: .33rem .55rem;
+    border-radius: 5px;
+    border: 1px solid #7975a23c;
+    background: #9692e010;
+}
+
+.projects-section {
+    background: #0b0b18;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+  viewBox="0 0 28 28" fill="none" role="img"
+  aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">Localisation</title>
+  <desc id="desc">Pictogramme NeoForge Crystal autonome aux couleurs de la marque.</desc>
+  <g>
+    <g transform="translate(2 2) translate(12 12) skewX(-3.5) translate(-12 -12) translate(-.75 .9)" fill="none" stroke="#04789B" stroke-width="2.3"
+      stroke-linecap="square" stroke-linejoin="bevel" opacity=".72">
+      <path d="M12 22s7-6 7-13a7 7 0 1 0-14 0c0 7 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/>
+    </g>
+    <g transform="translate(2 2) translate(12 12) skewX(-3.5) translate(-12 -12)" fill="none" stroke="#EEE5E9" stroke-width="1.42"
+      stroke-linecap="square" stroke-linejoin="bevel">
+      <path d="M12 22s7-6 7-13a7 7 0 1 0-14 0c0 7 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/>
+    </g>
+    <g fill="#08B2E3" stroke="#08B2E3" stroke-width="1.65"
+      stroke-linecap="square" stroke-linejoin="bevel">
+      <path d="M2 5 5 2h3v1.6H5.8L3.6 5.8V8H2Z" stroke="none"/>
+    </g>
+  </g>
+</svg>

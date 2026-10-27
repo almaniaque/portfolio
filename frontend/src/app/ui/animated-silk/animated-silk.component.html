@@ -1,1 +1,85 @@
-<canvas #canvas class="silk-canvas" aria-hidden="true"></canvas>
+<svg
+  class="silk-scene"
+  viewBox="0 0 1600 900"
+  preserveAspectRatio="xMidYMid slice"
+  aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <radialGradient id="nf-light-purple">
+      <stop offset="0%" stop-color="#673dfd" stop-opacity="0.60" />
+      <stop offset="55%" stop-color="#45227f" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#1c113a" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="nf-light-blue">
+      <stop offset="0%" stop-color="#3b63fa" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#1b2d6c" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="nf-back" x1="0%" y1="90%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4135bd" stop-opacity="0" />
+      <stop offset="40%" stop-color="#7c53ef" stop-opacity="0.24" />
+      <stop offset="73%" stop-color="#648aff" stop-opacity="0.40" />
+      <stop offset="100%" stop-color="#7c51ff" stop-opacity="0.10" />
+    </linearGradient>
+    <linearGradient id="nf-middle" x1="15%" y1="100%" x2="90%" y2="0%">
+      <stop offset="0%" stop-color="#6a29c8" stop-opacity="0.04" />
+      <stop offset="34%" stop-color="#994cff" stop-opacity="0.30" />
+      <stop offset="62%" stop-color="#b69aff" stop-opacity="0.45" />
+      <stop offset="90%" stop-color="#6da8ff" stop-opacity="0.17" />
+      <stop offset="100%" stop-color="#5b63de" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="nf-front" x1="0%" y1="100%" x2="90%" y2="0%">
+      <stop offset="0%" stop-color="#7747ed" stop-opacity="0" />
+      <stop offset="39%" stop-color="#755de7" stop-opacity="0.23" />
+      <stop offset="66%" stop-color="#8ab9ff" stop-opacity="0.40" />
+      <stop offset="86%" stop-color="#d2b7ff" stop-opacity="0.51" />
+      <stop offset="100%" stop-color="#683fba" stop-opacity="0.06" />
+    </linearGradient>
+    <linearGradient id="nf-shade" x1="0%" y1="0%" x2="70%" y2="0%">
+      <stop offset="0%" stop-color="#060711" stop-opacity="0.96" />
+      <stop offset="50%" stop-color="#060711" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#060711" stop-opacity="0" />
+    </linearGradient>
+    <filter id="nf-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="36" />
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#060711" />
+  <g filter="url(#nf-blur)" opacity="0.9">
+    <ellipse cx="990" cy="480" rx="440" ry="230" fill="url(#nf-light-purple)" />
+    <ellipse cx="1270" cy="240" rx="355" ry="335" fill="url(#nf-light-blue)" />
+  </g>
+
+  <g class="nf-ribbon nf-ribbon--back">
+    <path [attr.d]="backSurface" fill="url(#nf-back)" />
+    @for (strand of backFibers; track $index) {
+      <path [attr.d]="strand" class="nf-strand nf-strand--back" />
+    }
+  </g>
+  <g class="nf-ribbon nf-ribbon--middle">
+    <path [attr.d]="middleSurface" fill="url(#nf-middle)" />
+    @for (strand of middleFibers; track $index) {
+      <path [attr.d]="strand" class="nf-strand nf-strand--middle" />
+    }
+  </g>
+  <g class="nf-ribbon nf-ribbon--front">
+    <path [attr.d]="frontSurface" fill="url(#nf-front)" />
+    @for (strand of frontFibers; track $index) {
+      <path [attr.d]="strand" class="nf-strand nf-strand--front" />
+    }
+  </g>
+
+  <g class="nf-stars">
+    @for (star of stars; track $index) {
+      <circle
+        [attr.cx]="star.x"
+        [attr.cy]="star.y"
+        [attr.r]="star.radius"
+        fill="#a5a4ff"
+        [attr.opacity]="star.opacity"
+      />
+    }
+  </g>
+  <rect width="1600" height="900" fill="url(#nf-shade)" />
+</svg>

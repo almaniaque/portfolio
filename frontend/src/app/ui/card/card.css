@@ -1,0 +1,30 @@
+:host {
+    display: block;
+    height: 100%;
+}
+
+.nf-card {
+    height: 100%;
+    padding: 1.6rem;
+    border-radius: 20px;
+    border: 1px solid #8279b22c;
+    background: linear-gradient(152deg, #17162ab5, #0b0b17e8);
+    box-shadow: inset 0 1px #ffffff0b;
+    transition: transform .25s, border-color .25s, background .25s;
+}
+
+.nf-card:hover {
+    transform: translateY(-4px);
+    border-color: #a99aff88;
+    background: linear-gradient(152deg, #211c39d9, #0c0c1ce8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nf-card {
+        transition: none;
+    }
+
+    .nf-card:hover {
+        transform: none;
+    }
+}

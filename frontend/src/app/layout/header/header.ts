@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { Navbar } from '../navbar/navbar';
 
 @Component({
-  imports: [],
+  imports: [
+    Navbar,
+  ],
   selector: 'app-header',
   styleUrl: './header.css',
   templateUrl: './header.html',

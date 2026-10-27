@@ -1,0 +1,76 @@
+:host {
+    display: inline-flex;
+}
+
+.nf-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    min-height: 3.1rem;
+    padding: .8rem 1.35rem;
+    border: 1px solid #f1eefd;
+    border-radius: 999px;
+    background: #f5f4ff;
+    color: #13111e;
+    font-size: .87rem;
+    font-weight: 750;
+    line-height: 1.25;
+    text-decoration: none;
+    box-shadow: 0 6px 40px #d0baff20;
+    transition: transform .2s, box-shadow .2s, border-color .2s, background .2s;
+}
+
+.nf-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 42px #b1a1fc44;
+}
+
+.nf-button:focus-visible {
+    outline: 3px solid #9acbff;
+    outline-offset: 4px;
+}
+
+.nf-button--outline {
+    border-color: #8c8aa49c;
+    background: #0b0a1b4d;
+    color: #f4f1ff;
+    box-shadow: none;
+}
+
+.nf-button--outline:hover {
+    border-color: #b8a6ff;
+    background: #b69bff1a;
+}
+
+.nf-button--quiet {
+    border-color: transparent;
+    background: transparent;
+    color: #c6b7ff;
+    box-shadow: none;
+}
+
+app-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nf-button {
+        transition: none;
+    }
+
+    .nf-button:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    :host {
+        width: 100%;
+    }
+
+    .nf-button {
+        width: 100%;
+    }
+}

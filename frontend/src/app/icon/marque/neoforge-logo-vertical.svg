@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="535" viewBox="0 0 800 535" fill="none"
+  role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">NeoForge — logo vertical on-dark</title>
+  <desc id="desc">Emblème cristallin NeoForge associé à son mot-symbole vectoriel.</desc>
+  <svg x="190" y="20" width="420" height="420"
+    viewBox="260 80 820 1080" overflow="visible">
+<defs>
+    <path
+      id="mark"
+      fill-rule="evenodd"
+      d="M660 132 790 261 1002 261 1002 389 805 390 805 472 955 473 955 593 805 598 805 877 614 1070 322 760 322 264 398 264 561 434 562 231ZM672 246 672 545 690 562 691 357 738 311ZM428 457 428 686 611 867 691 787 691 764 626 699 563 757 562 634 516 590 513 542Z"
+    />
+
+    <clipPath id="mark-clip">
+      <use xlink:href="#mark"/>
+    </clipPath>
+
+    <linearGradient id="base" x1="367" y1="1040" x2="947" y2="197" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#003D52"/>
+      <stop offset="0.48" stop-color="#04789B"/>
+      <stop offset="1" stop-color="#08B2E3"/>
+    </linearGradient>
+
+    <linearGradient id="n-ribbon" x1="356" y1="277" x2="739" y2="721" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#77919E"/>
+      <stop offset="0.18" stop-color="#08B2E3"/>
+      <stop offset="0.62" stop-color="#04789B"/>
+      <stop offset="1" stop-color="#003D52"/>
+    </linearGradient>
+
+    <linearGradient id="spine" x1="590" y1="167" x2="687" y2="694" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08B2E3"/>
+      <stop offset="0.55" stop-color="#04789B"/>
+      <stop offset="1" stop-color="#003D52"/>
+    </linearGradient>
+
+    <linearGradient id="f-ribbon" x1="744" y1="260" x2="833" y2="916" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08B2E3"/>
+      <stop offset="0.45" stop-color="#04789B"/>
+      <stop offset="1" stop-color="#003D52"/>
+    </linearGradient>
+
+    <linearGradient id="lower-ribbon" x1="367" y1="690" x2="736" y2="1074" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#003D52"/>
+      <stop offset="0.55" stop-color="#04789B"/>
+      <stop offset="1" stop-color="#08B2E3"/>
+    </linearGradient>
+
+    <linearGradient id="steel" x1="699" y1="409" x2="827" y2="597" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEE5E9"/>
+      <stop offset="0.48" stop-color="#77919E"/>
+      <stop offset="1" stop-color="#04789B"/>
+    </linearGradient>
+
+    <linearGradient id="edge-light" x1="394" y1="251" x2="857" y2="936" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEE5E9" stop-opacity="0.94"/>
+      <stop offset="0.35" stop-color="#EEE5E9" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#08B2E3" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g shape-rendering="geometricPrecision">
+    <!-- Masse générale -->
+    <use
+      xlink:href="#mark"
+      fill="url(#base)"
+      stroke="#003D52"
+      stroke-width="13"
+      stroke-linejoin="miter"
+    />
+
+    <g clip-path="url(#mark-clip)">
+      <!-- Ruban N : une seule lecture continue -->
+      <path
+        d="M314 244H432L706 519V735L610 640L432 453V757H314Z"
+        fill="url(#n-ribbon)"
+      />
+
+      <!-- Flèche centrale -->
+      <path
+        d="M554 258L662 122L682 560L729 610L692 737L563 608Z"
+        fill="url(#spine)"
+      />
+
+      <!-- Branche F -->
+      <path
+        d="M690 347L791 249H1025V397H810V474H969V603H810V902L690 1024Z"
+        fill="url(#f-ribbon)"
+      />
+
+      <!-- Boucle forgée inférieure -->
+      <path
+        d="M311 654L428 654L611 843L691 766L816 646V899L626 1097H593L311 813Z"
+        fill="url(#lower-ribbon)"
+      />
+
+      <!-- Facettes principales -->
+      <path d="M318 267H430L430 453L318 568Z" fill="#04789B"/>
+      <path d="M430 267L610 448L571 508L430 365Z" fill="#08B2E3" fill-opacity="0.88"/>
+      <path d="M430 453L610 640L610 730L430 548Z" fill="#04789B" fill-opacity="0.76"/>
+
+      <path d="M563 258L661 132L671 316L563 421Z" fill="#08B2E3"/>
+      <path d="M563 421L671 316L677 560L618 619L563 563Z" fill="#003D52" fill-opacity="0.68"/>
+
+      <path d="M690 347L791 251L863 326L805 397Z" fill="#08B2E3"/>
+      <path d="M791 251H1021V331L901 397Z" fill="#77919E" fill-opacity="0.72"/>
+      <path d="M901 397H1021V331Z" fill="#08B2E3" fill-opacity="0.84"/>
+
+      <path d="M690 474L810 397V515L690 633Z" fill="url(#steel)" fill-opacity="0.9"/>
+      <path d="M810 474H969V603H886Z" fill="#04789B"/>
+      <path d="M810 474L886 603L810 603Z" fill="#08B2E3" fill-opacity="0.9"/>
+      <path d="M886 603H969V474Z" fill="#003D52" fill-opacity="0.62"/>
+
+      <path d="M314 654H428L498 724L429 792L314 681Z" fill="#77919E" fill-opacity="0.86"/>
+      <path d="M429 792L611 974L550 1036L368 852Z" fill="#04789B"/>
+      <path d="M550 1036L611 974L626 1094Z" fill="#08B2E3"/>
+      <path d="M611 843L691 766V908L626 974Z" fill="#08B2E3" fill-opacity="0.78"/>
+      <path d="M691 908L816 782V899L626 1097V974Z" fill="#04789B"/>
+
+      <!-- Reflets continus, fins et contrôlés -->
+      <path d="M329 276H420L601 457L587 480L409 302H329Z" fill="url(#edge-light)"/>
+      <path d="M577 266L650 163L653 202L578 304Z" fill="#EEE5E9" fill-opacity="0.76"/>
+      <path d="M712 348L795 267H1001L985 286H805L727 363Z" fill="#EEE5E9" fill-opacity="0.68"/>
+      <path d="M709 487L793 414V441L711 513Z" fill="#EEE5E9" fill-opacity="0.55"/>
+      <path d="M330 671H418L600 854L583 871L405 692H330Z" fill="#EEE5E9" fill-opacity="0.48"/>
+    </g>
+
+    <!-- Joints structurels -->
+    <g
+      clip-path="url(#mark-clip)"
+      stroke="#EEE5E9"
+      stroke-width="3.2"
+      stroke-linecap="square"
+      stroke-linejoin="miter"
+      opacity="0.66"
+    >
+      <path d="M430 267V453L318 568"/>
+      <path d="M430 453L610 640"/>
+      <path d="M563 421L671 316"/>
+      <path d="M677 560L618 619"/>
+      <path d="M791 251L863 326L805 397"/>
+      <path d="M901 397L1021 331"/>
+      <path d="M810 474L886 603"/>
+      <path d="M428 654L498 724L429 792"/>
+      <path d="M429 792L611 974"/>
+      <path d="M611 843L691 766"/>
+      <path d="M691 908L626 974"/>
+    </g>
+
+    <!-- Double contour vectoriel : structure + lumière -->
+    <use
+      xlink:href="#mark"
+      fill="none"
+      stroke="#003D52"
+      stroke-width="13"
+      stroke-linejoin="miter"
+      vector-effect="non-scaling-stroke"
+    />
+    <use
+      xlink:href="#mark"
+      fill="none"
+      stroke="#08B2E3"
+      stroke-width="2.5"
+      stroke-linejoin="miter"
+      stroke-opacity="0.78"
+      vector-effect="non-scaling-stroke"
+    />
+  </g>
+  </svg>
+  <g transform="translate(120 435) scale(.8)" fill="#EEE5E9" fill-rule="nonzero">
+    <g transform="translate(0 0)"><path d="M0 8 8 0H18V100H0Z M18 0H34L70 72V100H54L18 28Z M52 0H70V100H52Z"/></g>
+    <g transform="translate(90 0)"><path d="M0 8 8 0H62L70 8V16H18V42H58V58H18V84H70V92L62 100H0Z"/></g>
+    <g transform="translate(180 0)"><path fill-rule="evenodd" d="M10 0H60L70 10V90L60 100H10L0 90V10ZM18 16 16 18V82L18 84H52L54 82V18L52 16Z"/></g>
+    <g transform="translate(270 0)"><path d="M0 8 8 0H62L70 8V16H18V42H58V58H18V100H0Z"/></g>
+    <g transform="translate(360 0)"><path fill-rule="evenodd" d="M10 0H60L70 10V90L60 100H10L0 90V10ZM18 16 16 18V82L18 84H52L54 82V18L52 16Z"/></g>
+    <g transform="translate(450 0)"><path d="M0 8 8 0H18V100H0Z M18 0H54L68 14V48L54 62H18V46H48L52 42V20L48 16H18Z M38 58H57L72 100H52L34 62Z"/></g>
+    <g transform="translate(540 0)"><path fill-rule="evenodd" d="M10 0H60L70 10V32H54V18L52 16H18L16 18V82L18 84H52L54 82V66H42V50H70V90L60 100H10L0 90V10Z"/></g>
+    <g transform="translate(630 0)"><path d="M0 8 8 0H62L70 8V16H18V42H58V58H18V84H70V92L62 100H0Z"/></g>
+  </g>
+</svg>

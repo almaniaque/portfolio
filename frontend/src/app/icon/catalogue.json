@@ -1,0 +1,518 @@
+{
+  "nom": "NeoForge — sélection portfolio",
+  "source": "graphisme.zip fourni par utilisateur",
+  "nombre_ressources_visuelles": 100,
+  "repartition": {
+    "navigation": 11,
+    "competences": 23,
+    "projets": 8,
+    "actions": 12,
+    "contact": 10,
+    "badges": 12,
+    "marque": 8,
+    "reseaux": 6,
+    "parcours": 10
+  },
+  "fichiers": {
+    "app/icon/navigation/home.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/home.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1087
+    },
+    "app/icon/navigation/menu.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/menu.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1045
+    },
+    "app/icon/navigation/close.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/close.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1041
+    },
+    "app/icon/navigation/arrow-left.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/arrow-left.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1065
+    },
+    "app/icon/navigation/arrow-right.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/arrow-right.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1046
+    },
+    "app/icon/navigation/arrow-down.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/arrow-down.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1049
+    },
+    "app/icon/navigation/chevron-left.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/chevron-left.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1042
+    },
+    "app/icon/navigation/chevron-right.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/chevron-right.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1033
+    },
+    "app/icon/navigation/chevron-down.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/chevron-down.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1031
+    },
+    "app/icon/navigation/external-link.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/external-link.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1092
+    },
+    "app/icon/navigation/search.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/navigation/search.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — navigation",
+      "octets": 1108
+    },
+    "app/icon/competences/code.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/code.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1066
+    },
+    "app/icon/competences/terminal.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/terminal.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1134
+    },
+    "app/icon/competences/api.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/api.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1237
+    },
+    "app/icon/competences/database.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/database.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1236
+    },
+    "app/icon/competences/server.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/server.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1239
+    },
+    "app/icon/competences/cloud.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/cloud.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1109
+    },
+    "app/icon/competences/responsive.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/responsive.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1240
+    },
+    "app/icon/competences/mobile.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/mobile.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1116
+    },
+    "app/icon/competences/monitor.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/monitor.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1115
+    },
+    "app/icon/competences/layout.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/layout.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1113
+    },
+    "app/icon/competences/layers.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/layers.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1089
+    },
+    "app/icon/competences/git-branch.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/git-branch.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1235
+    },
+    "app/icon/competences/accessibility.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/accessibility.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1167
+    },
+    "app/icon/competences/analytics.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/analytics.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1100
+    },
+    "app/icon/competences/seo.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/seo.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1134
+    },
+    "app/icon/competences/speed.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/speed.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1144
+    },
+    "app/icon/competences/lightning.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/lightning.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1053
+    },
+    "app/icon/competences/rocket.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/rocket.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1242
+    },
+    "app/icon/competences/target.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/target.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1248
+    },
+    "app/icon/competences/palette.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/business-media/palette.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1318
+    },
+    "app/icon/competences/wrench.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/business-media/wrench.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1145
+    },
+    "app/icon/competences/shield-check.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/status/shield-check.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1169
+    },
+    "app/icon/competences/link.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/web/link.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — competences",
+      "octets": 1188
+    },
+    "app/icon/projets/briefcase.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/business-media/briefcase.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — projets",
+      "octets": 1142
+    },
+    "app/icon/projets/folder.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/business-media/folder.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — projets",
+      "octets": 1038
+    },
+    "app/icon/projets/file.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/business-media/file.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — projets",
+      "octets": 1111
+    },
+    "app/icon/projets/package.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/business-media/package.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — projets",
+      "octets": 1129
+    },
+    "app/icon/projets/image.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/business-media/image.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — projets",
+      "octets": 1191
+    },
+    "app/icon/projets/video.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/business-media/video.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — projets",
+      "octets": 1130
+    },
+    "app/icon/projets/bookmark.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/business-media/bookmark.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — projets",
+      "octets": 1040
+    },
+    "app/icon/projets/eye.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/status/eye.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — projets",
+      "octets": 1147
+    },
+    "app/icon/actions/check.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/check.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1030
+    },
+    "app/icon/actions/download.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/download.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1069
+    },
+    "app/icon/actions/copy.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/copy.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1113
+    },
+    "app/icon/actions/share.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/share.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1250
+    },
+    "app/icon/actions/plus.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/plus.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1041
+    },
+    "app/icon/actions/minus.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/minus.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1021
+    },
+    "app/icon/actions/edit.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/edit.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1100
+    },
+    "app/icon/actions/refresh.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/refresh.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1092
+    },
+    "app/icon/actions/upload.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/upload.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1075
+    },
+    "app/icon/actions/settings.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/settings.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1273
+    },
+    "app/icon/actions/filter.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/actions/filter.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1043
+    },
+    "app/icon/actions/star.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/status/star.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — actions",
+      "octets": 1137
+    },
+    "app/icon/contact/mail.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/mail.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1121
+    },
+    "app/icon/contact/phone.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/phone.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1118
+    },
+    "app/icon/contact/chat.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/chat.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1097
+    },
+    "app/icon/contact/calendar.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/calendar.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1187
+    },
+    "app/icon/contact/clock.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/clock.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1093
+    },
+    "app/icon/contact/user.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/user.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1128
+    },
+    "app/icon/contact/users.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/users.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1218
+    },
+    "app/icon/contact/map-pin.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/map-pin.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1168
+    },
+    "app/icon/contact/send.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/send.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1081
+    },
+    "app/icon/contact/globe.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/crystal/communication/globe.svg",
+      "utilisation": "Pictogramme NeoForge Crystal — contact",
+      "octets": 1174
+    },
+    "app/icon/badges/code.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/code.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1788
+    },
+    "app/icon/badges/api.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/api.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1959
+    },
+    "app/icon/badges/database.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/database.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1958
+    },
+    "app/icon/badges/server.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/server.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1961
+    },
+    "app/icon/badges/responsive.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/responsive.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1962
+    },
+    "app/icon/badges/rocket.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/rocket.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1964
+    },
+    "app/icon/badges/analytics.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/analytics.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1822
+    },
+    "app/icon/badges/seo.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/seo.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1856
+    },
+    "app/icon/badges/layers.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/layers.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1811
+    },
+    "app/icon/badges/palette.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/business-media/palette.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 2040
+    },
+    "app/icon/badges/accessibility.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/web/accessibility.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1889
+    },
+    "app/icon/badges/shield-check.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/icons/badges/status/shield-check.svg",
+      "utilisation": "Grand badge NeoForge pour carte de compétence ou service",
+      "octets": 1891
+    },
+    "app/icon/marque/neoforge-logo-horizontal.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/assets/brand/neoforge-logo-horizontal.svg",
+      "utilisation": "Identité NeoForge",
+      "octets": 7807
+    },
+    "app/icon/marque/neoforge-logo-vertical.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/assets/brand/neoforge-logo-vertical.svg",
+      "utilisation": "Identité NeoForge",
+      "octets": 7805
+    },
+    "app/icon/marque/neoforge-mark-primary.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/assets/brand/neoforge-mark-primary.svg",
+      "utilisation": "Identité NeoForge",
+      "octets": 6537
+    },
+    "app/icon/marque/neoforge-mark-flat.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/assets/brand/neoforge-mark-flat.svg",
+      "utilisation": "Identité NeoForge",
+      "octets": 1485
+    },
+    "app/icon/marque/neoforge-favicon.svg": {
+      "origine": "NeoForge-Signature-UI-Kit/assets/brand/neoforge-favicon.svg",
+      "utilisation": "Identité NeoForge",
+      "octets": 1091
+    },
+    "app/icon/marque/favicon-32x32.png": {
+      "origine": "neoforge-favicon-pack/favicon-32x32.png",
+      "utilisation": "Favicon ou icône pour navigateurs",
+      "octets": 1795
+    },
+    "app/icon/marque/apple-touch-icon.png": {
+      "origine": "neoforge-favicon-pack/apple-touch-icon.png",
+      "utilisation": "Favicon ou icône pour navigateurs",
+      "octets": 16685
+    },
+    "app/icon/marque/favicon.ico": {
+      "origine": "neoforge-favicon-pack/favicon.ico",
+      "utilisation": "Favicon ou icône pour navigateurs",
+      "octets": 15086
+    },
+    "app/icon/reseaux/github.svg": {
+      "origine": "Pack_SVG_Reseaux_Sociaux_NeoForge/github_neoforge.svg",
+      "utilisation": "Réseau social, marque tierce stylisée NeoForge",
+      "octets": 3142
+    },
+    "app/icon/reseaux/linkedin.svg": {
+      "origine": "Pack_SVG_Reseaux_Sociaux_NeoForge/linkedin_neoforge.svg",
+      "utilisation": "Réseau social, marque tierce stylisée NeoForge",
+      "octets": 2731
+    },
+    "app/icon/reseaux/youtube.svg": {
+      "origine": "Pack_SVG_Reseaux_Sociaux_NeoForge/youtube_neoforge.svg",
+      "utilisation": "Réseau social, marque tierce stylisée NeoForge",
+      "octets": 2760
+    },
+    "app/icon/reseaux/instagram.svg": {
+      "origine": "Pack_SVG_Reseaux_Sociaux_NeoForge/instagram_neoforge.svg",
+      "utilisation": "Réseau social, marque tierce stylisée NeoForge",
+      "octets": 2745
+    },
+    "app/icon/reseaux/x.svg": {
+      "origine": "Pack_SVG_Reseaux_Sociaux_NeoForge/x_neoforge.svg",
+      "utilisation": "Réseau social, marque tierce stylisée NeoForge",
+      "octets": 2518
+    },
+    "app/icon/reseaux/facebook.svg": {
+      "origine": "Pack_SVG_Reseaux_Sociaux_NeoForge/facebook_neoforge.svg",
+      "utilisation": "Réseau social, marque tierce stylisée NeoForge",
+      "octets": 2554
+    },
+    "app/icon/parcours/nf-list-primary.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/duotone/nf-list-primary.svg",
+      "utilisation": "Marqueur NeoForge pour listes/chronologie",
+      "octets": 984
+    },
+    "app/icon/parcours/nf-list-sub.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/duotone/nf-list-sub.svg",
+      "utilisation": "Marqueur NeoForge pour listes/chronologie",
+      "octets": 971
+    },
+    "app/icon/parcours/nf-list-emphasis.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/duotone/nf-list-emphasis.svg",
+      "utilisation": "Marqueur NeoForge pour listes/chronologie",
+      "octets": 935
+    },
+    "app/icon/parcours/nf-list-milestone.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/duotone/nf-list-milestone.svg",
+      "utilisation": "Marqueur NeoForge pour listes/chronologie",
+      "octets": 968
+    },
+    "app/icon/parcours/nf-list-step-01.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/numbers/nf-list-step-01.svg",
+      "utilisation": "Étape numérotée pour section parcours",
+      "octets": 1174
+    },
+    "app/icon/parcours/nf-list-step-02.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/numbers/nf-list-step-02.svg",
+      "utilisation": "Étape numérotée pour section parcours",
+      "octets": 1210
+    },
+    "app/icon/parcours/nf-list-step-03.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/numbers/nf-list-step-03.svg",
+      "utilisation": "Étape numérotée pour section parcours",
+      "octets": 1210
+    },
+    "app/icon/parcours/nf-list-step-04.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/numbers/nf-list-step-04.svg",
+      "utilisation": "Étape numérotée pour section parcours",
+      "octets": 1198
+    },
+    "app/icon/parcours/nf-list-step-05.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/numbers/nf-list-step-05.svg",
+      "utilisation": "Étape numérotée pour section parcours",
+      "octets": 1210
+    },
+    "app/icon/parcours/nf-list-step-06.svg": {
+      "origine": "NeoForge-Cutline-List-System/svg/numbers/nf-list-step-06.svg",
+      "utilisation": "Étape numérotée pour section parcours",
+      "octets": 1222
+    }
+  }
+}

@@ -1,0 +1,139 @@
+:host {
+    display: block;
+}
+
+.site-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 30;
+}
+
+.nav-shell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1260px;
+    min-height: 84px;
+    padding: 0 clamp(22px, 5vw, 80px);
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    flex: none;
+    gap: .65rem;
+    font-size: .92rem;
+    font-weight: 900;
+    letter-spacing: .16em;
+    color: #f8f7ff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.brand app-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.brand-accent {
+    color: #bfa6ff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 2.1vw, 30px);
+}
+
+.nav-links a {
+    color: #adb0c8;
+    text-decoration: none;
+    font-size: .78rem;
+    font-weight: 600;
+    padding: 12px 1px;
+    transition: color .2s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: #fff;
+}
+
+.nav-links .contact-link {
+    color: #fff;
+    border: 1px solid #77759688;
+    border-radius: 999px;
+    padding: .67rem 1.15rem;
+    white-space: nowrap;
+}
+
+.contact-link span {
+    color: #b1a0ff;
+    padding-left: .35rem;
+}
+
+.nav-links .contact-link:hover {
+    border-color: #9d8dfb;
+    background: #bdacff14;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .nav-shell {
+        min-height: 72px;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border: 1px solid #aaa1cf77;
+        border-radius: 10px;
+        background: #18162ae8;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .menu-toggle app-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 72px;
+        padding: 18px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3px;
+        border: 1px solid #8f79d05c;
+        border-radius: 16px;
+        background: #101021f7;
+        box-shadow: 0 22px 70px #000a;
+    }
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: .95rem;
+        padding: 12px;
+    }
+
+    .nav-links .contact-link {
+        text-align: center;
+    }
+}

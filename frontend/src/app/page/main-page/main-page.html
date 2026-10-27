@@ -1,11 +1,253 @@
-<app-animated-silk [speed]="0.6" [strands]="54">
-</app-animated-silk>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<app-navbar />
+<main id="contenu">
+    <!-- HERO : le fond est décoratif, la lecture reste prioritaire. -->
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <app-animated-silk [speed]="0.6" [strands]="54" />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-shell">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> CONCEPTION <span class="dot">·</span> SOLUTIONS
+                    SUR MESURE</p>
+                <h1 id="hero-title">Transformer<br />vos idées en<br /><span>solutions</span><br />durables<span
+                        class="period">.</span></h1>
+                <p class="hero-lead">Je conçois des applications web modernes, intuitives et évolutives, adaptées aux
+                    besoins réels et pensées pour durer.</p>
+                <div class="hero-actions">
+                    <app-button label="Explorer mes projets" icon="navigation/arrow-right" href="#projets" />
+                    <app-button label="Me contacter" variant="outline" icon="contact/chat" href="#contact" />
+                </div>
+                <div class="hero-meta"><span class="status-dot" aria-hidden="true"></span><span>Conception web ·
+                        Développement · Solutions numériques</span></div>
+            </div>
 
-<body class="hero">
-    <div class="hero__content">
-        <h1>
-            Transformer vos idées
-            en solutions durables.
-        </h1>
-    </div>
-</body>
+            <aside class="showcase" aria-labelledby="showcase-title">
+                <div class="showcase-head"><span class="section-index">02</span><span
+                        class="showcase-label">RÉALISATIONS</span><span class="showcase-rule"></span></div>
+                <h2 id="showcase-title">Des projets <em>concrets</em><br />pour des besoins réels.</h2>
+                <p>Des produits en construction, avec une approche technique adaptée à chaque objectif.</p>
+                <div class="showcase-grid">
+                    <a class="showcase-tile showcase-tile--accord" href="#accord">
+                        <span class="tile-top"><app-badge text="Projet phare" /><app-icon
+                                name="navigation/arrow-right" /></span>
+                        <span class="tile-visual tile-visual--accord" aria-hidden="true">
+                            <span class="tile-glow"></span><span class="tile-orbit tile-orbit--one"></span><span
+                                class="tile-orbit tile-orbit--two"></span><span class="tile-monogram">A</span>
+                        </span>
+                        <span class="tile-caption"><strong>Accord</strong><small>Application web ·
+                                Gestion</small></span>
+                    </a>
+                    <a class="showcase-tile showcase-tile--nexus" href="#nexus">
+                        <span class="tile-top"><app-badge text="IA & code" tone="cyan" /><app-icon
+                                name="navigation/arrow-right" /></span>
+                        <span class="tile-visual tile-visual--code" aria-hidden="true"><span
+                                class="code-mark">&lt;/&gt;</span><span class="code-streak"></span><span
+                                class="code-streak short"></span><span class="code-streak medium"></span></span>
+                        <span class="tile-caption"><strong>NEXUS Code</strong><small>Agent de
+                                développement</small></span>
+                    </a>
+                </div>
+            </aside>
+            <a class="scroll-note" href="#expertises"><span class="scroll-track" aria-hidden="true"></span> SCROLLER
+                POUR EXPLORER</a>
+        </div>
+    </section>
+
+    <!-- EXPERTISES -->
+    <section class="content-section expertise-section" id="expertises" aria-labelledby="expertises-title">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span class="section-index">01</span> CE QUE JE CONSTRUIS</p>
+                    <h2 id="expertises-title">Des compétences au service<br /><span>de vos idées.</span></h2>
+                </div>
+                <p class="section-intro">Du premier écran à la logique métier, chaque partie d'un produit doit être
+                    claire, fiable et simple à faire évoluer.</p>
+            </div>
+            <div class="expertise-grid">
+                <app-card>
+                    <div class="expertise-icon"><app-icon name="competences/code" /></div>
+                    <h3>Interfaces web</h3>
+                    <p>Des expériences modernes, responsives et accessibles, pensées pour leurs utilisateurs.</p><span
+                        class="tech-pills"><span>Angular</span><span>TypeScript</span><span>CSS</span></span>
+                </app-card>
+                <app-card>
+                    <div class="expertise-icon"><app-icon name="competences/api" /></div>
+                    <h3>Backend & API</h3>
+                    <p>Une logique applicative structurée pour faire communiquer les fonctionnalités de manière fiable.
+                    </p><span class="tech-pills"><span>Java</span><span>Spring Boot</span><span>REST</span></span>
+                </app-card>
+                <app-card>
+                    <div class="expertise-icon"><app-icon name="competences/database" /></div>
+                    <h3>Données & sécurité</h3>
+                    <p>Des données organisées, des accès maîtrisés et une architecture pensée pour la maintenance.</p>
+                    <span class="tech-pills"><span>PostgreSQL</span><span>SQL</span></span>
+                </app-card>
+                <app-card>
+                    <div class="expertise-icon"><app-icon name="competences/rocket" /></div>
+                    <h3>Automatisation</h3>
+                    <p>Des outils qui réduisent les tâches répétitives et rendent les processus plus efficaces.</p><span
+                        class="tech-pills"><span>CI/CD</span><span>GitHub Actions</span></span>
+                </app-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="content-section projects-section" id="projets" aria-labelledby="projets-title">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span class="section-index">02</span> PROJETS SÉLECTIONNÉS</p>
+                    <h2 id="projets-title">De l'idée<br /><span>au produit.</span></h2>
+                </div>
+                <p class="section-intro">Trois projets qui illustrent des approches différentes : produit web, agent de
+                    développement et identité numérique.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project" id="accord">
+                    <div class="project-art project-art--accord">
+                        <div class="mock-window">
+                            <div class="mock-header"><i></i><i></i><i></i><span>ACCORD / TABLEAU DE BORD</span></div>
+                            <div class="mock-body">
+                                <div class="mock-side"></div>
+                                <div class="mock-main">
+                                    <div class="mock-title"></div>
+                                    <div class="mock-tiles"><b></b><b></b><b></b></div>
+                                    <div class="mock-chart">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-num"><span>01 / APPLICATION</span><app-badge text="En développement"
+                                tone="muted" /></div>
+                        <h3>Accord</h3>
+                        <p>Une plateforme de gestion pour les entreprises, construite autour de leurs besoins métier.
+                        </p>
+                        <div class="project-tags"><span>Angular</span><span>Java</span><span>PostgreSQL</span></div><a
+                            href="#contact" class="project-more">Parlons de ce projet <app-icon
+                                name="navigation/arrow-right" /></a>
+                    </div>
+                </article>
+                <article class="project" id="nexus">
+                    <div class="project-art project-art--nexus">
+                        <div class="terminal-window">
+                            <div class="terminal-head"><span class="terminal-led"></span>NEXUS / CODE AGENT</div>
+                            <div class="terminal-lines"><span><b class="line-purple">&gt;</b> analyser le
+                                    projet...</span><span><b class="line-cyan">✓</b> contexte identifié</span><span><b
+                                        class="line-purple">&gt;</b> préparer les modifications</span><span><b
+                                        class="line-cyan">✓</b> vérifications prévues</span><span
+                                    class="terminal-cursor">▌</span></div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-num"><span>02 / OUTIL DE DÉVELOPPEMENT</span><app-badge text="Prototype"
+                                tone="cyan" /></div>
+                        <h3>NEXUS Code</h3>
+                        <p>Un agent conçu pour assister les tâches de développement, avec un accent sur le contrôle et
+                            la vérification.</p>
+                        <div class="project-tags"><span>Python</span><span>IA</span><span>Automatisation</span></div><a
+                            href="#contact" class="project-more">Parlons de ce projet <app-icon
+                                name="navigation/arrow-right" /></a>
+                    </div>
+                </article>
+                <article class="project project--wide">
+                    <div class="project-art project-art--forge"><span class="forge-halo"></span><app-icon
+                            name="marque/neoforge-mark-primary" /><span class="forge-wordmark">NEOFORGE</span></div>
+                    <div class="project-content">
+                        <div class="project-num"><span>03 / IDENTITÉ & FRONTEND</span><app-badge
+                                text="En construction" /></div>
+                        <h3>NeoForge</h3>
+                        <p>Ce portfolio : un terrain d'expérimentation pour le design, les animations et les composants
+                            web.</p>
+                        <div class="project-tags"><span>Angular</span><span>UI Design</span><span>SVG</span></div><a
+                            href="#accueil" class="project-more">Revenir à l'accueil <app-icon
+                                name="navigation/arrow-right" /></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARCOURS : pas de dates ou diplômes inventés. -->
+    <section class="content-section journey-section" id="parcours" aria-labelledby="parcours-title">
+        <div class="container journey-layout">
+            <div>
+                <p class="eyebrow"><span class="section-index">03</span> PARCOURS</p>
+                <h2 id="parcours-title">Comprendre.<br />Construire.<br /><span>Progresser.</span></h2>
+                <p class="journey-lead">J'apprends en développant de vrais projets, en reliant l'interface, la logique
+                    métier et les données. Mon objectif : créer des solutions utiles, pas simplement écrire du code.</p>
+            </div>
+            <div class="journey-steps">
+                <div class="journey-step"><span>01</span>
+                    <div>
+                        <h3>Comprendre le besoin</h3>
+                        <p>Identifier l'objectif avant de choisir la technologie.</p>
+                    </div>
+                </div>
+                <div class="journey-step"><span>02</span>
+                    <div>
+                        <h3>Concevoir et développer</h3>
+                        <p>Organiser le code, construire les fonctionnalités et tester.</p>
+                    </div>
+                </div>
+                <div class="journey-step"><span>03</span>
+                    <div>
+                        <h3>Améliorer en continu</h3>
+                        <p>Écouter les retours et faire évoluer le produit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="content-section services-section" id="services" aria-labelledby="services-title">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span class="section-index">04</span> APPROCHE</p>
+                    <h2 id="services-title">Une idée ?<br /><span>Construisons-la.</span></h2>
+                </div>
+                <p class="section-intro">Une démarche simple, de la compréhension du besoin à la création d'une solution
+                    adaptée.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-line"><app-icon name="competences/target" />
+                    <div>
+                        <h3>Cadrage</h3>
+                        <p>Objectifs, usages, contraintes : poser les bonnes bases.</p>
+                    </div><span>01</span>
+                </div>
+                <div class="service-line"><app-icon name="competences/layers" />
+                    <div>
+                        <h3>Conception</h3>
+                        <p>Interfaces, structure et expérience utilisateur cohérentes.</p>
+                    </div><span>02</span>
+                </div>
+                <div class="service-line"><app-icon name="competences/cloud" />
+                    <div>
+                        <h3>Développement</h3>
+                        <p>Construire, vérifier et préparer les évolutions futures.</p>
+                    </div><span>03</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT : aucune adresse fictive exposée. -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="container contact-wrap">
+            <p class="eyebrow"><span class="section-index">05</span> ÉCHANGEONS</p>
+            <h2 id="contact-title">Votre projet mérite<br /><span>une vraie réflexion.</span></h2>
+            <p>Vous avez une idée, une question ou simplement envie de discuter technique ? Parlons-en.</p>
+            <p class="contact-placeholder">Coordonnées et liens de contact à compléter avant publication.</p><a
+                class="back-to-top" href="#accueil">Retour en haut <span aria-hidden="true">↑</span></a>
+        </div>
+    </section>
+</main>
+<app-footer />

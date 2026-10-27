@@ -1,0 +1,30 @@
+:host {
+    display: inline-flex;
+}
+
+.nf-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: .4rem .62rem;
+    border: 1px solid #8d6aff4a;
+    border-radius: 6px;
+    background: #855cff1d;
+    color: #c3afff;
+    letter-spacing: .12em;
+    font-size: .62rem;
+    text-transform: uppercase;
+    font-weight: 850;
+    line-height: 1;
+}
+
+.nf-badge.cyan {
+    color: #7bddf6;
+    background: #15bce519;
+    border-color: #15bce548;
+}
+
+.nf-badge.muted {
+    color: #c7c7de;
+    background: #aaaac51a;
+    border-color: #aaaac534;
+}
