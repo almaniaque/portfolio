@@ -1,0 +1,13 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    isolation: isolate;
+    background: #060711;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
