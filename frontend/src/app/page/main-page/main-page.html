@@ -32,8 +32,10 @@
       </header>
 
       <article class="feature" id="fsspa" appReveal>
-        <a class="feature-visual feature-visual--fsspa" [href]="github" target="_blank" rel="noopener" aria-label="Voir le code du site FSSPA sur GitHub (nouvel onglet)">
-          <div class="browser">
+        <div class="feature-visual feature-visual--fsspa" [class.is-flipped]="flipped()['fsspa']">
+          <div class="flip-inner">
+            <div class="face face--front" (click)="toggle('fsspa')">
+              <div class="browser">
             <div class="browser-bar"><i></i><i></i><i></i><span>fsspa</span></div>
             <div class="browser-body vitrine">
               <div class="v-nav"><b></b><span></span><span></span><span></span><em></em></div>
@@ -41,7 +43,32 @@
               <div class="v-cols"><span></span><span></span><span></span></div>
             </div>
           </div>
-        </a>
+              <span class="flip-hint" aria-hidden="true">↻ Aperçu du site</span>
+            </div>
+            <div class="face face--back" [attr.aria-hidden]="!flipped()['fsspa']">
+              <div class="browser browser--flat">
+                <div class="browser-bar"><i></i><i></i><i></i><span>fsspa</span></div>
+                <div class="viewport">
+                  <div class="page-scroll">
+                    <div class="pg pg--fsspa">
+                      <div class="v-nav"><b></b><span></span><span></span><span></span><em></em></div>
+                      <div class="v-hero v-hero--big"><div class="v-title"><span></span><span></span><span class="s"></span><u></u></div><div class="v-img"></div></div>
+                      <div class="pg-h"></div>
+                      <div class="v-cols v-cols--tall"><span></span><span></span><span></span></div>
+                      <div class="pg-split"><div class="v-img"></div><div class="pg-lines"><span></span><span></span><span class="s"></span><span></span></div></div>
+                      <div class="pg-stats"><b></b><b></b><b></b><b></b></div>
+                      <div class="pg-banner"><span></span><u></u></div>
+                      <div class="pg-foot"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                  <img class="shot" src="projects/fsspa.jpg" alt="Capture d'écran du site FSSPA" loading="lazy" />
+                </div>
+              </div>
+              <a class="flip-hint flip-hint--link" [href]="github" target="_blank" rel="noopener" [attr.tabindex]="flipped()['fsspa'] ? 0 : -1">Code ↗</a>
+            </div>
+          </div>
+          <button type="button" class="flip-btn" (click)="toggle('fsspa')" [attr.aria-pressed]="!!flipped()['fsspa']" aria-label="Retourner la carte FSSPA pour voir l'aperçu du site">↻ {{ flipped()['fsspa'] ? 'Retour' : 'Aperçu' }}</button>
+        </div>
         <div class="feature-info">
           <p class="label">Site vitrine</p>
           <h3>FSSPA</h3>
@@ -52,8 +79,10 @@
       </article>
 
       <article class="feature feature--flip" id="amy" appReveal>
-        <a class="feature-visual feature-visual--amy" [href]="amyRepo" target="_blank" rel="noopener" aria-label="Voir le code du petit atelier d'Amy sur GitHub (nouvel onglet)">
-          <div class="browser">
+        <div class="feature-visual feature-visual--amy" [class.is-flipped]="flipped()['amy']">
+          <div class="flip-inner">
+            <div class="face face--front" (click)="toggle('amy')">
+              <div class="browser">
             <div class="browser-bar"><i></i><i></i><i></i><span>le-petit-atelier-d-amy</span></div>
             <div class="browser-body shop">
               <div class="s-nav"><b>Amy</b><span></span><span></span><em>Panier (2)</em></div>
@@ -63,7 +92,35 @@
               </div>
             </div>
           </div>
-        </a>
+              <span class="flip-hint" aria-hidden="true">↻ Aperçu du site</span>
+            </div>
+            <div class="face face--back" [attr.aria-hidden]="!flipped()['amy']">
+              <div class="browser browser--flat">
+                <div class="browser-bar"><i></i><i></i><i></i><span>le-petit-atelier-d-amy</span></div>
+                <div class="viewport">
+                  <div class="page-scroll">
+                    <div class="pg pg--amy">
+                      <div class="s-nav"><b>Amy</b><span></span><span></span><em>Panier (2)</em></div>
+                      <div class="s-hero s-hero--big"><div class="candle"><i class="flame"></i><i class="wick"></i><i class="wax"></i></div><div class="s-copy"><span></span><span class="s"></span><u></u></div></div>
+                      <div class="pg-h pg-h--amy"></div>
+                      <div class="s-grid s-grid--2">
+                        @for (n of [1, 2, 3, 4]; track n) { <div class="s-card s-card--big"><i></i><span></span><b></b></div> }
+                      </div>
+                      <div class="pg-banner pg-banner--amy"><span></span><u></u></div>
+                      <div class="s-grid">
+                        @for (n of [1, 2, 3]; track n) { <div class="s-card"><i></i><span></span><b></b></div> }
+                      </div>
+                      <div class="pg-foot"><span></span><span></span><span></span></div>
+                    </div>
+                  </div>
+                  <img class="shot" src="projects/amy.jpg" alt="Capture d'écran du site Le petit atelier d'Amy" loading="lazy" />
+                </div>
+              </div>
+              <a class="flip-hint flip-hint--link" [href]="amyRepo" target="_blank" rel="noopener" [attr.tabindex]="flipped()['amy'] ? 0 : -1">Code ↗</a>
+            </div>
+          </div>
+          <button type="button" class="flip-btn" (click)="toggle('amy')" [attr.aria-pressed]="!!flipped()['amy']" aria-label="Retourner la carte Le petit atelier d'Amy pour voir l'aperçu du site">↻ {{ flipped()['amy'] ? 'Retour' : 'Aperçu' }}</button>
+        </div>
         <div class="feature-info">
           <p class="label">Boutique en ligne</p>
           <h3>Le petit atelier d'Amy</h3>
