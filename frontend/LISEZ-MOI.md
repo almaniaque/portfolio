@@ -45,7 +45,7 @@ import { MainPage } from './page/main-page/main-page';
 
 - `main-page.html` : textes et descriptions de projets. Vérifie les noms/statuts publics que tu veux montrer.
 - `#contact` : **aucune vraie adresse n'a été inventée**. Remplace la note « coordonnées et liens... » par tes contacts réels quand tu le souhaites.
-- Les cartes « Accord », « NEXUS Code » et « NeoForge » utilisent des aperçus **conceptuels en CSS**, pas des captures d'écran de vrais produits. Remplace-les par tes captures lorsqu'elles sont prêtes.
+- Les cartes « Accord », « Prism Atlas » et « NeoForge » utilisent des aperçus **conceptuels en CSS**, pas des captures d'écran de vrais produits. Remplace-les par tes captures lorsqu'elles sont prêtes.
 - Les liens internes mènent bien aux sections. Aucun faux lien GitHub ou LinkedIn n'a été créé.
 
 ## Icônes : comment cela fonctionne ?

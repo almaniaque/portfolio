@@ -1,0 +1,29 @@
+:root {
+    --bg: #05060d;
+    --paper: #0a0e1c;
+    --ink: #e6f6ff;
+    --muted: #7f90aa;
+    --line: #00f0ff38;
+    --accent: #00f0ff;
+    --accent2: #ff2e88;
+    --warn: #f5ff3a;
+    --font: 'Chakra Petch', 'Segoe UI', Arial, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+    --ease: cubic-bezier(.16, 1, .3, 1);
+    --cut: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
+    color-scheme: dark;
+    font-family: var(--font);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: var(--bg); color: var(--ink); }
+/* Lignes de balayage CRT, statiques et très discrètes */
+body::after { content: ''; position: fixed; inset: 0; z-index: 90; pointer-events: none; background: repeating-linear-gradient(0deg, #00000038 0 1px, transparent 1px 3px); opacity: .22; }
+::selection { background: var(--accent); color: #001014; }
+:focus-visible { outline: 2px solid var(--warn); outline-offset: 4px; }
+a { color: inherit; }
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); transition-delay: var(--d, 0s); }
+.reveal.is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { opacity: 1; transform: none; transition: none; } }

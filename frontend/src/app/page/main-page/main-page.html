@@ -1,253 +1,157 @@
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <app-navbar />
 <main id="contenu">
-    <!-- HERO : le fond est décoratif, la lecture reste prioritaire. -->
-    <section class="hero" id="accueil" aria-labelledby="hero-title">
-        <app-animated-silk [speed]="0.6" [strands]="54" />
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-shell">
-            <div class="hero-copy">
-                <p class="eyebrow"><span class="eyebrow-line"></span> CONCEPTION <span class="dot">·</span> SOLUTIONS
-                    SUR MESURE</p>
-                <h1 id="hero-title">Transformer<br />vos idées en<br /><span>solutions</span><br />durables<span
-                        class="period">.</span></h1>
-                <p class="hero-lead">Je conçois des applications web modernes, intuitives et évolutives, adaptées aux
-                    besoins réels et pensées pour durer.</p>
-                <div class="hero-actions">
-                    <app-button label="Explorer mes projets" icon="navigation/arrow-right" href="#projets" />
-                    <app-button label="Me contacter" variant="outline" icon="contact/chat" href="#contact" />
-                </div>
-                <div class="hero-meta"><span class="status-dot" aria-hidden="true"></span><span>Conception web ·
-                        Développement · Solutions numériques</span></div>
-            </div>
 
-            <aside class="showcase" aria-labelledby="showcase-title">
-                <div class="showcase-head"><span class="section-index">02</span><span
-                        class="showcase-label">RÉALISATIONS</span><span class="showcase-rule"></span></div>
-                <h2 id="showcase-title">Des projets <em>concrets</em><br />pour des besoins réels.</h2>
-                <p>Des produits en construction, avec une approche technique adaptée à chaque objectif.</p>
-                <div class="showcase-grid">
-                    <a class="showcase-tile showcase-tile--accord" href="#accord">
-                        <span class="tile-top"><app-badge text="Projet phare" /><app-icon
-                                name="navigation/arrow-right" /></span>
-                        <span class="tile-visual tile-visual--accord" aria-hidden="true">
-                            <span class="tile-glow"></span><span class="tile-orbit tile-orbit--one"></span><span
-                                class="tile-orbit tile-orbit--two"></span><span class="tile-monogram">A</span>
-                        </span>
-                        <span class="tile-caption"><strong>Accord</strong><small>Application web ·
-                                Gestion</small></span>
-                    </a>
-                    <a class="showcase-tile showcase-tile--nexus" href="#nexus">
-                        <span class="tile-top"><app-badge text="IA & code" tone="cyan" /><app-icon
-                                name="navigation/arrow-right" /></span>
-                        <span class="tile-visual tile-visual--code" aria-hidden="true"><span
-                                class="code-mark">&lt;/&gt;</span><span class="code-streak"></span><span
-                                class="code-streak short"></span><span class="code-streak medium"></span></span>
-                        <span class="tile-caption"><strong>NEXUS Code</strong><small>Agent de
-                                développement</small></span>
-                    </a>
-                </div>
-            </aside>
-            <a class="scroll-note" href="#expertises"><span class="scroll-track" aria-hidden="true"></span> SCROLLER
-                POUR EXPLORER</a>
+  <!-- ACCUEIL -->
+  <section class="hero" id="accueil" aria-labelledby="hero-title">
+    <app-dot-field />
+    <div class="grid-floor" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="status"><i aria-hidden="true"></i> > en ce moment : je finalise deux sites, en attente de leur hébergeur<span class="caret" aria-hidden="true">_</span></p>
+      <h1 id="hero-title">
+        Salut, moi c'est
+        <span class="nw"><span class="name" data-text="Davy">Davy<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 11 C 40 3, 70 16, 110 8 S 180 4, 215 11 S 270 6, 297 9" /></svg></span>.</span>
+        Je fabrique des sites et des outils web qui servent vraiment.
+      </h1>
+      <div class="hero-bottom">
+        <p class="hero-lead">Je dirige NeoForge Studio, mon activité de développeur web freelance : vitrines, boutiques en ligne, applications de gestion. Je prends le temps de comprendre le besoin avant de coder — et je suis très curieux de tout ce que l'IA et l'automatisation changent à notre façon de construire.</p>
+        <div class="hero-actions">
+          <a class="btn btn--solid" href="#projets">Voir ce que j'ai fait <span aria-hidden="true">↓</span></a>
+          <a class="btn" href="#contact">Écrire au studio</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- EXPERTISES -->
-    <section class="content-section expertise-section" id="expertises" aria-labelledby="expertises-title">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow"><span class="section-index">01</span> CE QUE JE CONSTRUIS</p>
-                    <h2 id="expertises-title">Des compétences au service<br /><span>de vos idées.</span></h2>
-                </div>
-                <p class="section-intro">Du premier écran à la logique métier, chaque partie d'un produit doit être
-                    claire, fiable et simple à faire évoluer.</p>
-            </div>
-            <div class="expertise-grid">
-                <app-card>
-                    <div class="expertise-icon"><app-icon name="competences/code" /></div>
-                    <h3>Interfaces web</h3>
-                    <p>Des expériences modernes, responsives et accessibles, pensées pour leurs utilisateurs.</p><span
-                        class="tech-pills"><span>Angular</span><span>TypeScript</span><span>CSS</span></span>
-                </app-card>
-                <app-card>
-                    <div class="expertise-icon"><app-icon name="competences/api" /></div>
-                    <h3>Backend & API</h3>
-                    <p>Une logique applicative structurée pour faire communiquer les fonctionnalités de manière fiable.
-                    </p><span class="tech-pills"><span>Java</span><span>Spring Boot</span><span>REST</span></span>
-                </app-card>
-                <app-card>
-                    <div class="expertise-icon"><app-icon name="competences/database" /></div>
-                    <h3>Données & sécurité</h3>
-                    <p>Des données organisées, des accès maîtrisés et une architecture pensée pour la maintenance.</p>
-                    <span class="tech-pills"><span>PostgreSQL</span><span>SQL</span></span>
-                </app-card>
-                <app-card>
-                    <div class="expertise-icon"><app-icon name="competences/rocket" /></div>
-                    <h3>Automatisation</h3>
-                    <p>Des outils qui réduisent les tâches répétitives et rendent les processus plus efficaces.</p><span
-                        class="tech-pills"><span>CI/CD</span><span>GitHub Actions</span></span>
-                </app-card>
-            </div>
-        </div>
-    </section>
+  <!-- PROJETS -->
+  <section class="section" id="projets" aria-labelledby="projets-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="label">Projets</p>
+        <h2 id="projets-title" appReveal>Ce que j'ai construit.</h2>
+      </header>
 
-    <!-- PROJETS -->
-    <section class="content-section projects-section" id="projets" aria-labelledby="projets-title">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow"><span class="section-index">02</span> PROJETS SÉLECTIONNÉS</p>
-                    <h2 id="projets-title">De l'idée<br /><span>au produit.</span></h2>
-                </div>
-                <p class="section-intro">Trois projets qui illustrent des approches différentes : produit web, agent de
-                    développement et identité numérique.</p>
+      <article class="feature" id="fsspa" appReveal>
+        <a class="feature-visual feature-visual--fsspa" [href]="github" target="_blank" rel="noopener" aria-label="Voir le code du site FSSPA sur GitHub (nouvel onglet)">
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span>fsspa</span></div>
+            <div class="browser-body vitrine">
+              <div class="v-nav"><b></b><span></span><span></span><span></span><em></em></div>
+              <div class="v-hero"><div class="v-title"><span></span><span></span><span class="s"></span><u></u></div><div class="v-img"></div></div>
+              <div class="v-cols"><span></span><span></span><span></span></div>
             </div>
-            <div class="project-grid">
-                <article class="project" id="accord">
-                    <div class="project-art project-art--accord">
-                        <div class="mock-window">
-                            <div class="mock-header"><i></i><i></i><i></i><span>ACCORD / TABLEAU DE BORD</span></div>
-                            <div class="mock-body">
-                                <div class="mock-side"></div>
-                                <div class="mock-main">
-                                    <div class="mock-title"></div>
-                                    <div class="mock-tiles"><b></b><b></b><b></b></div>
-                                    <div class="mock-chart">
-                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-num"><span>01 / APPLICATION</span><app-badge text="En développement"
-                                tone="muted" /></div>
-                        <h3>Accord</h3>
-                        <p>Une plateforme de gestion pour les entreprises, construite autour de leurs besoins métier.
-                        </p>
-                        <div class="project-tags"><span>Angular</span><span>Java</span><span>PostgreSQL</span></div><a
-                            href="#contact" class="project-more">Parlons de ce projet <app-icon
-                                name="navigation/arrow-right" /></a>
-                    </div>
-                </article>
-                <article class="project" id="nexus">
-                    <div class="project-art project-art--nexus">
-                        <div class="terminal-window">
-                            <div class="terminal-head"><span class="terminal-led"></span>NEXUS / CODE AGENT</div>
-                            <div class="terminal-lines"><span><b class="line-purple">&gt;</b> analyser le
-                                    projet...</span><span><b class="line-cyan">✓</b> contexte identifié</span><span><b
-                                        class="line-purple">&gt;</b> préparer les modifications</span><span><b
-                                        class="line-cyan">✓</b> vérifications prévues</span><span
-                                    class="terminal-cursor">▌</span></div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-num"><span>02 / OUTIL DE DÉVELOPPEMENT</span><app-badge text="Prototype"
-                                tone="cyan" /></div>
-                        <h3>NEXUS Code</h3>
-                        <p>Un agent conçu pour assister les tâches de développement, avec un accent sur le contrôle et
-                            la vérification.</p>
-                        <div class="project-tags"><span>Python</span><span>IA</span><span>Automatisation</span></div><a
-                            href="#contact" class="project-more">Parlons de ce projet <app-icon
-                                name="navigation/arrow-right" /></a>
-                    </div>
-                </article>
-                <article class="project project--wide">
-                    <div class="project-art project-art--forge"><span class="forge-halo"></span><app-icon
-                            name="marque/neoforge-mark-primary" /><span class="forge-wordmark">NEOFORGE</span></div>
-                    <div class="project-content">
-                        <div class="project-num"><span>03 / IDENTITÉ & FRONTEND</span><app-badge
-                                text="En construction" /></div>
-                        <h3>NeoForge</h3>
-                        <p>Ce portfolio : un terrain d'expérimentation pour le design, les animations et les composants
-                            web.</p>
-                        <div class="project-tags"><span>Angular</span><span>UI Design</span><span>SVG</span></div><a
-                            href="#accueil" class="project-more">Revenir à l'accueil <app-icon
-                                name="navigation/arrow-right" /></a>
-                    </div>
-                </article>
-            </div>
+          </div>
+        </a>
+        <div class="feature-info">
+          <p class="label">Site vitrine</p>
+          <h3>FSSPA</h3>
+          <p>Un site pour présenter la structure : clair, rapide, lisible aussi bien sur téléphone que sur grand écran. Le code est prêt, j'attends l'hébergeur pour le mettre en ligne.</p>
+          <ul class="tags"><li>Site vitrine</li><li>Responsive</li><li>Design sur mesure</li></ul>
+          <a class="link" [href]="github" target="_blank" rel="noopener">Voir le code sur GitHub ↗</a>
         </div>
-    </section>
+      </article>
 
-    <!-- PARCOURS : pas de dates ou diplômes inventés. -->
-    <section class="content-section journey-section" id="parcours" aria-labelledby="parcours-title">
-        <div class="container journey-layout">
-            <div>
-                <p class="eyebrow"><span class="section-index">03</span> PARCOURS</p>
-                <h2 id="parcours-title">Comprendre.<br />Construire.<br /><span>Progresser.</span></h2>
-                <p class="journey-lead">J'apprends en développant de vrais projets, en reliant l'interface, la logique
-                    métier et les données. Mon objectif : créer des solutions utiles, pas simplement écrire du code.</p>
+      <article class="feature feature--flip" id="amy" appReveal>
+        <a class="feature-visual feature-visual--amy" [href]="amyRepo" target="_blank" rel="noopener" aria-label="Voir le code du petit atelier d'Amy sur GitHub (nouvel onglet)">
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span>le-petit-atelier-d-amy</span></div>
+            <div class="browser-body shop">
+              <div class="s-nav"><b>Amy</b><span></span><span></span><em>Panier (2)</em></div>
+              <div class="s-hero"><div class="candle"><i class="flame"></i><i class="wick"></i><i class="wax"></i></div><div class="s-copy"><span></span><span class="s"></span><u></u></div></div>
+              <div class="s-grid">
+                @for (n of [1, 2, 3]; track n) { <div class="s-card"><i></i><span></span><b></b></div> }
+              </div>
             </div>
-            <div class="journey-steps">
-                <div class="journey-step"><span>01</span>
-                    <div>
-                        <h3>Comprendre le besoin</h3>
-                        <p>Identifier l'objectif avant de choisir la technologie.</p>
-                    </div>
-                </div>
-                <div class="journey-step"><span>02</span>
-                    <div>
-                        <h3>Concevoir et développer</h3>
-                        <p>Organiser le code, construire les fonctionnalités et tester.</p>
-                    </div>
-                </div>
-                <div class="journey-step"><span>03</span>
-                    <div>
-                        <h3>Améliorer en continu</h3>
-                        <p>Écouter les retours et faire évoluer le produit.</p>
-                    </div>
-                </div>
-            </div>
+          </div>
+        </a>
+        <div class="feature-info">
+          <p class="label">Boutique en ligne</p>
+          <h3>Le petit atelier d'Amy</h3>
+          <p>Une boutique pour une créatrice de bougies artisanales : un catalogue qui met les produits en valeur et un parcours d'achat simple. Le code est sur GitHub, la mise en ligne suivra dès que l'hébergeur sera prêt.</p>
+          <ul class="tags"><li>E-commerce</li><li>TypeScript</li><li>Artisanat</li></ul>
+          <a class="link" [href]="amyRepo" target="_blank" rel="noopener">Voir le code sur GitHub ↗</a>
         </div>
-    </section>
+      </article>
 
-    <!-- SERVICES -->
-    <section class="content-section services-section" id="services" aria-labelledby="services-title">
-        <div class="container">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow"><span class="section-index">04</span> APPROCHE</p>
-                    <h2 id="services-title">Une idée ?<br /><span>Construisons-la.</span></h2>
-                </div>
-                <p class="section-intro">Une démarche simple, de la compréhension du besoin à la création d'une solution
-                    adaptée.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-line"><app-icon name="competences/target" />
-                    <div>
-                        <h3>Cadrage</h3>
-                        <p>Objectifs, usages, contraintes : poser les bonnes bases.</p>
-                    </div><span>01</span>
-                </div>
-                <div class="service-line"><app-icon name="competences/layers" />
-                    <div>
-                        <h3>Conception</h3>
-                        <p>Interfaces, structure et expérience utilisateur cohérentes.</p>
-                    </div><span>02</span>
-                </div>
-                <div class="service-line"><app-icon name="competences/cloud" />
-                    <div>
-                        <h3>Développement</h3>
-                        <p>Construire, vérifier et préparer les évolutions futures.</p>
-                    </div><span>03</span>
-                </div>
-            </div>
-        </div>
-    </section>
+      <h3 class="list-title">Et aussi…</h3>
+      <ul class="rows">
+        <li appReveal><a href="#contact" id="accord"><span class="r-name">Accord</span><span class="r-desc">Une plateforme de gestion pour les entreprises</span><span class="r-tags">Angular · Java · PostgreSQL</span><span class="r-status">En développement</span></a></li>
+        <li appReveal="0.05"><a href="#labo" id="prism-atlas"><span class="r-name">Prism Atlas</span><span class="r-desc">Un agent qui assiste le développement</span><span class="r-tags">Python · IA</span><span class="r-status">Prototype</span></a></li>
+        <li appReveal="0.1"><a href="#accueil"><span class="r-name">Ce portfolio</span><span class="r-desc">Mon terrain de jeu pour le design et l'animation</span><span class="r-tags">Angular · SVG · Canvas</span><span class="r-status">En continu</span></a></li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- CONTACT : aucune adresse fictive exposée. -->
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-glow" aria-hidden="true"></div>
-        <div class="container contact-wrap">
-            <p class="eyebrow"><span class="section-index">05</span> ÉCHANGEONS</p>
-            <h2 id="contact-title">Votre projet mérite<br /><span>une vraie réflexion.</span></h2>
-            <p>Vous avez une idée, une question ou simplement envie de discuter technique ? Parlons-en.</p>
-            <p class="contact-placeholder">Coordonnées et liens de contact à compléter avant publication.</p><a
-                class="back-to-top" href="#accueil">Retour en haut <span aria-hidden="true">↑</span></a>
-        </div>
-    </section>
+  <!-- LABO : tourné vers l'avenir -->
+  <section class="section section--dark" id="labo" aria-labelledby="labo-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="label">Le labo</p>
+        <h2 id="labo-title" appReveal>Ce que j'explore pour la suite.</h2>
+        <p class="intro" appReveal="0.08">Le web change vite. Voilà les sujets sur lesquels je passe mes soirées — pas pour suivre une mode, mais pour construire des choses plus utiles, plus vite.</p>
+      </header>
+      <div class="lab-grid">
+        <article appReveal>
+          <span class="lab-tag">Module 01 · Prototype</span>
+          <h3>Des agents qui codent avec moi</h3>
+          <p>Avec Prism Atlas, je teste comment un agent peut analyser un projet, proposer des modifications et vérifier son travail — en gardant l'humain aux commandes.</p>
+        </article>
+        <article appReveal="0.08">
+          <span class="lab-tag">Module 02 · En pratique</span>
+          <h3>L'automatisation partout où c'est utile</h3>
+          <p>Tests, builds, déploiements : tout ce qui est répétitif devrait se faire tout seul. CI/CD et GitHub Actions sont devenus mes réflexes.</p>
+        </article>
+        <article appReveal="0.16">
+          <span class="lab-tag">Module 03 · À creuser</span>
+          <h3>Des interfaces qui s'adaptent</h3>
+          <p>Animations légères, accessibilité, performance : je cherche des interfaces vivantes mais rapides, qui restent agréables sur n'importe quel appareil.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTILS -->
+  <section class="section" id="outils" aria-labelledby="outils-title">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="label">Boîte à outils</p>
+        <h2 id="outils-title" appReveal>Ce que je sais faire.</h2>
+      </header>
+      <ul class="skills">
+        <li appReveal><app-icon name="competences/code" /><h3>Interfaces web</h3><p>Des pages modernes, responsives et accessibles.</p><span>Angular · TypeScript · CSS</span></li>
+        <li appReveal="0.05"><app-icon name="competences/api" /><h3>Backend &amp; API</h3><p>Une logique métier claire, des échanges fiables.</p><span>Java · Spring Boot · REST</span></li>
+        <li appReveal="0.1"><app-icon name="competences/database" /><h3>Données</h3><p>Des bases bien organisées, des accès maîtrisés.</p><span>PostgreSQL · SQL</span></li>
+        <li appReveal="0.15"><app-icon name="competences/rocket" /><h3>Automatisation</h3><p>Moins de tâches manuelles, plus de temps pour créer.</p><span>CI/CD · GitHub Actions</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MÉTHODE -->
+  <section class="section section--paper" id="methode" aria-labelledby="methode-title">
+    <div class="wrap method">
+      <header>
+        <p class="label">Ma façon de travailler</p>
+        <h2 id="methode-title" appReveal>Comprendre, construire, améliorer.</h2>
+        <p class="intro" appReveal="0.08">J'apprends en réalisant de vrais projets, en reliant l'interface, la logique métier et les données. Ce qui compte pour moi : que ce soit utile à ceux qui s'en servent.</p>
+      </header>
+      <ol class="steps">
+        <li appReveal><b>1</b><div><h3>J'écoute</h3><p>Objectifs, usages, contraintes : je pose les bonnes questions avant de choisir la technique.</p></div></li>
+        <li appReveal="0.06"><b>2</b><div><h3>Je construis</h3><p>Du code propre, testé, et des écrans cohérents. Je montre vite pour avoir des retours tôt.</p></div></li>
+        <li appReveal="0.12"><b>3</b><div><h3>J'améliore</h3><p>Chaque retour fait évoluer le produit. Un site n'est jamais vraiment « fini ».</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <p class="label">Contact</p>
+      <h2 id="contact-title" appReveal>Un projet en tête ?<br />On en parle.</h2>
+      <div class="contact-row" appReveal="0.08">
+        <p>Je travaille en freelance sous le nom de NeoForge Studio. Retrouve tout mon code sur GitHub. Mes coordonnées de contact seront ajoutées avant la mise en ligne du portfolio.</p>
+        <a class="btn btn--solid btn--big" [href]="github" target="_blank" rel="noopener"><app-icon name="reseaux/github" /> Mon GitHub ↗</a>
+      </div>
+    </div>
+  </section>
 </main>
 <app-footer />

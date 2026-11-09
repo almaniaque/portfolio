@@ -1,25 +1,18 @@
 import { Component } from '@angular/core';
-import { AnimatedSilkComponent } from '../../ui/animated-silk/animated-silk.component';
 import { Navbar } from '../../layout/navbar/navbar';
 import { Footer } from '../../layout/footer/footer';
-import { Button } from '../../ui/button/button';
-import { Card } from '../../ui/card/card';
-import { Badge } from '../../ui/badge/badge';
+import { DotField } from '../../ui/dot-field/dot-field';
 import { Icon } from '../../ui/icon/icon';
+import { Reveal } from '../../ui/motion/motion';
 
 @Component({
   selector: 'app-main-page',
   standalone: true,
-  imports: [
-    AnimatedSilkComponent, 
-    Navbar,
-    Footer, 
-    Button, 
-    Card, 
-    Badge, 
-    Icon
-  ],
+  imports: [Navbar, Footer, DotField, Icon, Reveal],
   templateUrl: './main-page.html',
   styleUrl: './main-page.css',
 })
-export class MainPage {}
+export class MainPage {
+  readonly github = 'https://github.com/almaniaque';
+  readonly amyRepo = 'https://github.com/almaniaque/LepetitAtelierd-amy';
+}
