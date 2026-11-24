@@ -13,6 +13,12 @@ import { Reveal } from '../../ui/motion/motion';
   styleUrl: './main-page.css',
 })
 export class MainPage {
+  readonly gallery = [
+    { key: 'accord', name: 'Accord', kind: 'Gestion pour indépendants', summary: 'Du devis accepté au dernier règlement, je réunis le suivi du chantier dans une application.' },
+    { key: 'nemea', name: 'Néméa', kind: 'Monde procédural', summary: 'Avec Unreal Engine, je construis un monde sphérique dont le relief se découvre depuis l’orbite.' },
+    { key: 'alicia', name: 'A.L.I.C.I.A.', kind: 'Assistant local', summary: 'Je développe un assistant qui applique des règles explicites et travaille directement sur ma machine.' },
+  ];
+  readonly active = signal(this.gallery[0]);
   readonly flipped = signal<Record<string, boolean>>({});
   toggle(key: string): void { this.flipped.update(f => ({ ...f, [key]: !f[key] })); }
 

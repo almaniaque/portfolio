@@ -1,2 +1,23 @@
 :host { display: block; background: var(--bg); color: var(--ink); overflow: clip; }
 :host * { box-sizing: border-box; }
+
+.showcase { display:grid; grid-template-columns:minmax(12rem,1fr) minmax(0,1.65fr); gap:clamp(1rem,4vw,4rem); margin:3rem 0 1rem; text-align:left; align-items:center; }
+.selector h2 { font:500 .9rem var(--mono); color:#c0aecf; margin:0 0 1rem; }
+.selector button { display:block; width:100%; padding:.35em .15em; text-align:left; font-family:inherit; font-size:clamp(1.5rem,3.7vw,3.4rem); line-height:1.12; font-weight:600; letter-spacing:-.05em; color:#aa9db9; background:transparent; border:0; border-bottom:1px solid #45394f; cursor:pointer; }
+.selector button[aria-pressed=true] { color:#f7edff; border-color:#ba86ff; }
+.selector button:focus-visible,.caption a:focus-visible { outline:2px solid #e3caff; outline-offset:3px; }
+.stage { background:#100d16; border:1px solid #594366; overflow:hidden; border-radius:4px; }
+.scene { animation:studio-reveal .36s ease-out; }
+.art { height:clamp(12rem,20vw,18rem); display:grid; place-items:center; overflow:hidden; background:radial-gradient(ellipse at 65% 95%,#67408a,transparent 65%),#191220; }
+.ledger { width:min(80%,21rem); padding:1em 1.25em; background:#21182c; border:1px solid #846990; box-shadow:0 12px 32px #09050c80; transform:rotate(-3deg); color:#f7efff; }
+.ledger small,.ledger span { font:.72rem var(--mono); }
+.ledger strong,.ledger span { display:block; margin-top:.65em; }
+.ledger span { display:flex; justify-content:space-between; padding-top:.5em; border-top:1px solid #524259; }
+.planet { width:78%; aspect-ratio:1; align-self:start; margin-top:12%; border-radius:50%; background:radial-gradient(ellipse at 68% 18%,#a08ba6,transparent 22%),repeating-radial-gradient(ellipse at 30% 90%,#463951 0 2%,#62526c 3%,#34283e 6%); box-shadow:inset -3em -5em 5em #090610,0 -3px 16px #dcabff; }
+.signal-core { border:1px solid #aa85d8; border-radius:24%; padding:.12em .45em; font:500 5rem var(--mono); color:#f6eaff; box-shadow:0 0 0 14px #ab78ff14,0 0 0 36px #ab78ff0c; }
+.signal-core span,.caption a { color:#d7acff; }
+.caption { padding:1rem 1.4rem; color:#f5eff9; min-height:9rem; }
+.caption p { margin:.4em 0; line-height:1.5; }
+@keyframes studio-reveal { from { opacity:.4; transform:translateY(5px); } }
+@media(max-width:700px){ .showcase { grid-template-columns:1fr; } .selector button { width:auto; display:inline-block; margin-right:.55rem; font-size:1.2rem; padding:.6em .15em; } }
+@media(prefers-reduced-motion:reduce){ .scene { animation:none; } }
