@@ -47,6 +47,22 @@
         </div>
       </article>
 
+      <article class="feature" id="accord" appReveal>
+        <a class="feature-visual feature-visual--fsspa fsppa-preview accord-preview" [href]="accordSite" target="_blank" rel="noopener" aria-label="Visiter le site Accord (nouvel onglet)">
+          <span class="flip-inner">
+            <span class="face face--front"><img src="projects/accord-logo.svg" alt="Accord" loading="lazy" /></span>
+            <span class="face face--back"><iframe src="projects/accord-preview.html" title="Aperçu de la page de préinscription Accord" sandbox="" tabindex="-1" aria-hidden="true" loading="lazy"></iframe></span>
+          </span>
+        </a>
+        <div class="feature-info">
+          <p class="label">Application SaaS · Préinscriptions</p>
+          <h3>Accord</h3>
+          <p>Je développe Accord, une plateforme de gestion pour les indépendants et les entreprises. Elle centralise les clients, les devis, les factures et le suivi de l’activité afin de simplifier la gestion quotidienne.</p>
+          <ul class="tags"><li>Angular</li><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li></ul>
+          <a class="link" [href]="accordSite" target="_blank" rel="noopener">Visiter le site Accord ↗</a>
+        </div>
+      </article>
+
       <article class="feature feature--flip" id="amy" appReveal>
         <div class="feature-visual feature-visual--amy" [class.is-flipped]="flipped()['amy']">
           <div class="flip-inner">
@@ -101,7 +117,6 @@
 
       <h3 class="list-title">Et aussi…</h3>
       <ul class="rows">
-        <li appReveal><a href="#contact" id="accord"><span class="r-name">Accord</span><span class="r-desc">Une plateforme de gestion pour les entreprises</span><span class="r-tags">Angular · Java · PostgreSQL</span><span class="r-status">En développement</span></a></li>
         <li appReveal="0.05"><a href="#labo" id="prism-atlas"><span class="r-name">Prism Atlas</span><span class="r-desc">Un agent qui assiste le développement</span><span class="r-tags">Python · IA</span><span class="r-status">Prototype</span></a></li>
         <li appReveal="0.1"><a href="#accueil"><span class="r-name">Ce portfolio</span><span class="r-desc">Mon terrain de jeu pour le design et l'animation</span><span class="r-tags">Angular · SVG · Canvas</span><span class="r-status">En continu</span></a></li>
       </ul>
