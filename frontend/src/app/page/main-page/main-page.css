@@ -1,8 +1,11 @@
 :host { display: block; background: var(--bg); color: var(--ink); overflow: clip; }
 :host * { box-sizing: border-box; }
-.fsppa-preview img { display: block; width: 100%; height: auto; }
-.fsppa-preview { display:block; position:relative; overflow:hidden; }
-.fsppa-preview .fsppa-home { position:absolute; inset:0; height:100%; object-fit:cover; object-position:top; opacity:0; transition:opacity .22s ease; }
-#fsspa:hover .fsppa-home, #fsspa:focus-within .fsppa-home { opacity:1; }
-@media (hover:none) { .fsppa-preview .fsppa-home { opacity:1; } }
-@media (prefers-reduced-motion:reduce) { .fsppa-preview .fsppa-home { transition:none; } }
+.fsppa-preview .face { padding: 0; }
+.fsppa-preview img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+#fsspa:focus-within .flip-inner { transform: rotateY(180deg); }
+@media (hover: hover) {
+  #fsspa:hover .flip-inner { transform: rotateY(180deg); }
+}
+@media (hover: none) {
+  .fsppa-preview .flip-inner { transform: rotateY(180deg); }
+}
