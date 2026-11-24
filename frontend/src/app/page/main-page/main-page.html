@@ -7,7 +7,7 @@
     <app-dot-field />
     <div class="grid-floor" aria-hidden="true"></div>
     <div class="hero-inner">
-      <p class="status"><i aria-hidden="true"></i> > en ce moment : je finalise deux sites, en attente de leur hébergeur<span class="caret" aria-hidden="true">_</span></p>
+      <p class="status"><i aria-hidden="true"></i> > en ce moment : le site de FSPPA-Formation est en ligne<span class="caret" aria-hidden="true">_</span></p>
       <h1 id="hero-title">
         Salut, moi c'est
         <span class="nw"><span class="name" data-text="Davy">Davy<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 11 C 40 3, 70 16, 110 8 S 180 4, 215 11 S 270 6, 297 9" /></svg></span>.</span>
@@ -32,49 +32,15 @@
       </header>
 
       <article class="feature" id="fsspa" appReveal>
-        <div class="feature-visual feature-visual--fsspa" [class.is-flipped]="flipped()['fsspa']">
-          <div class="flip-inner">
-            <div class="face face--front" (click)="toggle('fsspa')">
-              <div class="browser">
-            <div class="browser-bar"><i></i><i></i><i></i><span>fsspa</span></div>
-            <div class="browser-body vitrine">
-              <div class="v-nav"><b></b><span></span><span></span><span></span><em></em></div>
-              <div class="v-hero"><div class="v-title"><span></span><span></span><span class="s"></span><u></u></div><div class="v-img"></div></div>
-              <div class="v-cols"><span></span><span></span><span></span></div>
-            </div>
-          </div>
-              <span class="flip-hint" aria-hidden="true">↻ Aperçu du site</span>
-            </div>
-            <div class="face face--back" [attr.aria-hidden]="!flipped()['fsspa']">
-              <div class="browser browser--flat">
-                <div class="browser-bar"><i></i><i></i><i></i><span>fsspa</span></div>
-                <div class="viewport">
-                  <div class="page-scroll">
-                    <div class="pg pg--fsspa">
-                      <div class="v-nav"><b></b><span></span><span></span><span></span><em></em></div>
-                      <div class="v-hero v-hero--big"><div class="v-title"><span></span><span></span><span class="s"></span><u></u></div><div class="v-img"></div></div>
-                      <div class="pg-h"></div>
-                      <div class="v-cols v-cols--tall"><span></span><span></span><span></span></div>
-                      <div class="pg-split"><div class="v-img"></div><div class="pg-lines"><span></span><span></span><span class="s"></span><span></span></div></div>
-                      <div class="pg-stats"><b></b><b></b><b></b><b></b></div>
-                      <div class="pg-banner"><span></span><u></u></div>
-                      <div class="pg-foot"><span></span><span></span><span></span></div>
-                    </div>
-                  </div>
-                  <img class="shot" src="projects/fsspa.jpg" alt="Capture d'écran du site FSSPA" loading="lazy" />
-                </div>
-              </div>
-              <a class="flip-hint flip-hint--link" [href]="github" target="_blank" rel="noopener" [attr.tabindex]="flipped()['fsspa'] ? 0 : -1">Code ↗</a>
-            </div>
-          </div>
-          <button type="button" class="flip-btn" (click)="toggle('fsspa')" [attr.aria-pressed]="!!flipped()['fsspa']" aria-label="Retourner la carte FSSPA pour voir l'aperçu du site">↻ {{ flipped()['fsspa'] ? 'Retour' : 'Aperçu' }}</button>
-        </div>
+        <a class="fsppa-preview" [href]="fsppaSite" target="_blank" rel="noopener" aria-label="Visiter le site de FSPPA-Formation (nouvel onglet)">
+          <img src="projects/fsppa-prevention.svg" width="900" height="620" alt="Illustration de prévention routière de FSPPA-Formation" loading="lazy" />
+        </a>
         <div class="feature-info">
-          <p class="label">Site vitrine</p>
-          <h3>FSSPA</h3>
-          <p>Un site pour présenter la structure : clair, rapide, lisible aussi bien sur téléphone que sur grand écran. Le code est prêt, j'attends l'hébergeur pour le mettre en ligne.</p>
-          <ul class="tags"><li>Site vitrine</li><li>Responsive</li><li>Design sur mesure</li></ul>
-          <a class="link" [href]="github" target="_blank" rel="noopener">Voir le code sur GitHub ↗</a>
+          <p class="label">Site vitrine · En ligne</p>
+          <h3>FSPPA-Formation</h3>
+          <p>J’ai réalisé le site de FSPPA-Formation pour présenter ses formations, notamment en prévention routière. Les visiteurs peuvent consulter les thèmes proposés et contacter le formateur pour une intervention.</p>
+          <ul class="tags"><li>Site vitrine</li><li>Formation</li><li>Prévention routière</li></ul>
+          <a class="link" [href]="fsppaSite" target="_blank" rel="noopener">Visiter le site de FSPPA-Formation ↗</a>
         </div>
       </article>
 
