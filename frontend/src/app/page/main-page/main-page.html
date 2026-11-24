@@ -4,36 +4,25 @@
 
   <!-- ACCUEIL -->
   <section class="hero" id="accueil" aria-labelledby="hero-title">
-    <div class="forge-cover">
-      <div class="forge-copy">
-        <p class="byline">Davy · développeur indépendant</p>
-        <h1 id="hero-title">NeoForge<span>Studio.</span></h1>
-        <p class="forge-intro">Je conçois des sites et des applications sur mesure, du premier croquis à la mise en ligne.</p>
-        <a class="forge-action" href="#projets">Explorer mes réalisations <span aria-hidden="true">↘</span></a>
+    <app-dot-field />
+    <div class="grid-floor" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="status"><i aria-hidden="true"></i> > en ce moment : je finalise deux sites, en attente de leur hébergeur<span class="caret" aria-hidden="true">_</span></p>
+      <h1 id="hero-title">
+        Salut, moi c'est
+        <span class="nw"><span class="name" data-text="Davy">Davy<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 11 C 40 3, 70 16, 110 8 S 180 4, 215 11 S 270 6, 297 9" /></svg></span>.</span>
+        Je fabrique des sites et des outils web qui servent vraiment.
+      </h1>
+      <div class="hero-bottom">
+        <p class="hero-lead">Je dirige NeoForge Studio, mon activité de développeur web freelance : vitrines, boutiques en ligne, applications de gestion. Je prends le temps de comprendre le besoin avant de coder — et je suis très curieux de tout ce que l'IA et l'automatisation changent à notre façon de construire.</p>
+        <div class="hero-actions">
+          <a class="btn btn--solid" href="#projets">Voir ce que j'ai fait <span aria-hidden="true">↓</span></a>
+          <a class="btn" href="#contact">Écrire au studio</a>
+        </div>
       </div>
-      <div class="forge-sculpture" aria-hidden="true"><app-dot-field /></div>
     </div>
   </section>
-  <div class="studio-work">      <section class="showcase" aria-label="Dans mon atelier">
-        <div class="selector"><h2>Dans mon atelier.</h2>
-          @for (project of gallery; track project.key) {
-            <button type="button" [attr.aria-pressed]="active().key === project.key" aria-controls="project-stage" (click)="active.set(project)">{{ project.name }}</button>
-          }
-        </div>
-        <div id="project-stage" class="stage" aria-live="polite">
-          @for (project of [active()]; track project.key) {
-            <div class="scene"><div class="art" aria-hidden="true">
-              @switch (project.key) {
-                @case ('accord') { <div class="ledger"><small>ACCORD / DÉMONSTRATION</small><strong>Suivi du chantier</strong><span>Devis accepté <b>2 400 €</b></span><span>Acompte reçu <b>720 €</b></span><span>Solde à recevoir <b>1 680 €</b></span></div> }
-                @case ('nemea') { <div class="planet"></div> }
-                @default { <div class="signal-core">A<span>.</span></div> }
-              }
-            </div><div class="caption"><strong>{{ project.kind }}</strong><p>{{ project.summary }}</p>
-              @if (project.key === 'accord') { <a href="https://accord-neoforge.fr/">Découvrir Accord ↗</a> }
-            </div></div>
-          }
-        </div>
-      </section></div>
+
   <!-- PROJETS -->
   <section class="section" id="projets" aria-labelledby="projets-title">
     <div class="wrap">

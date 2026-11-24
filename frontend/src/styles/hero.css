@@ -36,22 +36,3 @@
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 @media (max-width: 700px) { .btn { width: 100%; justify-content: center; } .hero-actions { width: 100%; } .hero::after { background: linear-gradient(0deg, var(--bg) 0%, #05060dcc 55%, transparent 92%); } }
 @media (prefers-reduced-motion: reduce) { .caret, .status i, .grid-floor, .hero h1 .name::before, .hero h1 .name::after { animation: none; } .hero h1 .name path { animation: none; stroke-dashoffset: 0; } .hero h1 .name::before, .hero h1 .name::after { display: none; } .btn { transition: none; } }
-
-.hero { display:block; min-height:0; background:#100c16; }
-.hero::after { display:none; }
-.forge-cover { position:relative; isolation:isolate; display:grid; align-items:center; min-height:93svh; padding:7rem 7vw 4rem; overflow:hidden; background:radial-gradient(ellipse at 76% 46%,#31203f 0%,#17101e 38%,#0c0a10 73%); }
-.forge-copy { position:relative; z-index:1; width:48%; pointer-events:none; color:#f7f1fb; }
-.byline { font:.8rem var(--mono); letter-spacing:.1em; margin:0 0 2rem; color:#d9badf; }
-.hero .forge-copy h1 { font-size:clamp(4rem,8.6vw,10rem); line-height:.85; letter-spacing:-.08em; text-transform:none; }
-.forge-copy h1 span { display:block; margin:.06em 0 0 .28em; color:#d3b2ec; font-family:Georgia,serif; font-weight:400; font-style:italic; }
-.forge-intro { max-width:36ch; margin:2rem 0; line-height:1.6; }
-.forge-action { display:inline-flex; align-items:center; gap:1.8em; padding:.8em 0; color:#fff; border-bottom:1px solid #b589cf; text-decoration:none; pointer-events:auto; }
-.forge-action:hover span { transform:translate(2px,2px); }
-.forge-sculpture { position:absolute; inset:4% -5% 0 40%; }
-.studio-work { background:#100c16; padding:1rem 7vw 2rem; }
-@media(max-width:700px) {
-  .forge-cover { padding:7rem 6vw 2rem; align-content:start; min-height:auto; }
-  .forge-copy { width:100%; }
-  .forge-sculpture { position:relative; inset:auto; height:clamp(13rem,60vw,23rem); margin:-1rem -6vw 0; }
-  .forge-intro { margin:1.4rem 0 .6rem; }
-}
