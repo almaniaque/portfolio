@@ -24,7 +24,7 @@ export class MainPage {
     }));
   }
 
-  readonly fsppaSite = 'https://fsppa-formation.fr/';
+  readonly fsppaSite = 'https://fsppaformation.fr/';
   readonly github = 'https://github.com/almaniaque';
   readonly amyRepo = 'https://github.com/almaniaque/LepetitAtelierd-amy';
 }
