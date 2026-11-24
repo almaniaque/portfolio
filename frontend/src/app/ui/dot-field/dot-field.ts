@@ -26,41 +26,49 @@ export class DotField implements OnDestroy {
     const ctx = cv.getContext('2d');
     if (!ctx) return;
     const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const GAP = 30;
-    let w = 0, h = 0, dpr = 1, visible = true;
-    const mouse = { x: -9999, y: -9999, tx: -9999, ty: -9999 };
-
+    let w = 0, h = 0, visible = true;
+    const mouse = { x: 0, y: 0, tx: 0, ty: 0 };
+    // A braided torus knot, projected into the right half of the cover.
+    const strands = Array.from({ length: 46 }, (_, strand) => {
+      const phase = strand * 2 * Math.PI / 46;
+      return Array.from({ length: 241 }, (_, index) => {
+        const t = index * Math.PI / 120;
+        const twist = phase + 3 * t;
+        const radius = 1.18 + .48 * Math.cos(3 * t) + .19 * Math.cos(twist);
+        return { x: radius * Math.cos(2 * t), y: radius * Math.sin(2 * t),
+          z: .61 * Math.sin(3 * t) + .19 * Math.sin(twist) };
+      });
+    });
+    const draw = (time: number) => {
+      ctx.clearRect(0, 0, w, h);
+      const tilt = .85 + .18 * Math.sin(time * .00019) + mouse.y * .12;
+      const turn = -.48 + .22 * Math.sin(time * .00014) + mouse.x * .16;
+      const scale = Math.min(w * .25, h * .32);
+      const cx = w * .5, cy = h * .51;
+      const ct = Math.cos(tilt), st = Math.sin(tilt), cr = Math.cos(turn), sr = Math.sin(turn);
+      strands.forEach((strand, i) => {
+        ctx.beginPath();
+        strand.forEach((p, j) => {
+          const y = p.y * ct - p.z * st;
+          const depth = p.y * st + p.z * ct;
+          const k = scale / (1 - depth * .12);
+          const x = cx + (p.x * cr - y * sr) * k;
+          const py = cy + (p.x * sr + y * cr) * k;
+          if (j === 0) ctx.moveTo(x, py); else ctx.lineTo(x, py);
+        });
+        const light = .5 + .5 * Math.cos(i * Math.PI / 23);
+        ctx.strokeStyle = `hsla(${259 + 26 * light},95%,${45 + 43 * light}%,.87)`;
+        ctx.lineWidth = .7 + light;
+        ctx.stroke();
+      });
+    };
     const resize = () => {
-      dpr = Math.min(devicePixelRatio || 1, 2);
+      const dpr = Math.min(devicePixelRatio || 1, 2);
       w = this.host.clientWidth; h = this.host.clientHeight;
       cv.width = w * dpr; cv.height = h * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       draw(0);
     };
-
-    const draw = (t: number) => {
-      ctx.clearRect(0, 0, w, h);
-      const R = 170;
-      for (let gx = GAP / 2; gx < w; gx += GAP) {
-        for (let gy = GAP / 2; gy < h; gy += GAP) {
-          let x = gx, y = gy;
-          const wave = still ? 0 : Math.sin(gx * 0.011 + t * 0.0007) * Math.cos(gy * 0.013 - t * 0.0006);
-          let r = 1.15 + wave * 0.55;
-          const dx = gx - mouse.x, dy = gy - mouse.y;
-          const d = Math.hypot(dx, dy);
-          let hot = 0;
-          if (d < R) {
-            hot = 1 - d / R;
-            const push = hot * hot * 26;
-            x += (dx / (d || 1)) * push; y += (dy / (d || 1)) * push;
-            r += hot * 2.6;
-          }
-          ctx.fillStyle = hot > 0.02 ? `rgba(255,46,136,${0.35 + hot * 0.65})` : `rgba(0,240,255,${0.28 + wave * 0.1})`;
-          ctx.beginPath(); ctx.arc(x, y, Math.max(r, .4), 0, 6.2832); ctx.fill();
-        }
-      }
-    };
-
     const loop = (t: number) => {
       mouse.x += (mouse.tx - mouse.x) * 0.14; mouse.y += (mouse.ty - mouse.y) * 0.14;
       if (visible) draw(t);
@@ -69,10 +77,10 @@ export class DotField implements OnDestroy {
 
     const move = (e: PointerEvent) => {
       const r = this.host.getBoundingClientRect();
-      mouse.tx = e.clientX - r.left; mouse.ty = e.clientY - r.top;
-      if (mouse.x < -999) { mouse.x = mouse.tx; mouse.y = mouse.ty; }
+      mouse.tx = (e.clientX - r.left) / Math.max(w, 1) - .5; mouse.ty = (e.clientY - r.top) / Math.max(h, 1) - .5;
+
     };
-    const leave = () => { mouse.tx = mouse.ty = -9999; mouse.x = mouse.y = -9999; };
+    const leave = () => { mouse.tx = mouse.ty = 0; };
 
     const ro = new ResizeObserver(resize); ro.observe(this.host);
     const io = new IntersectionObserver(([e]) => (visible = e.isIntersecting)); io.observe(this.host);
@@ -80,11 +88,12 @@ export class DotField implements OnDestroy {
     if (!still) {
       section.addEventListener('pointermove', move, { passive: true });
       section.addEventListener('pointerleave', leave);
+      this.cleanup.push(() => cancelAnimationFrame(this.raf));
       this.raf = requestAnimationFrame(loop);
     }
     this.cleanup.push(() => { ro.disconnect(); io.disconnect(); section.removeEventListener('pointermove', move); section.removeEventListener('pointerleave', leave); });
     resize();
   }
 
-  ngOnDestroy(): void { cancelAnimationFrame(this.raf); this.cleanup.forEach(f => f()); }
+  ngOnDestroy(): void { this.cleanup.forEach(f => f()); }
 }
