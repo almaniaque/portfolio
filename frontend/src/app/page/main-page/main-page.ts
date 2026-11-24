@@ -24,6 +24,7 @@ export class MainPage {
     }));
   }
 
+  readonly accordSite = 'https://accord-neoforge.fr/';
   readonly fsppaSite = 'https://fsppaformation.fr/';
   readonly github = 'https://github.com/almaniaque';
   readonly amyRepo = 'https://github.com/almaniaque/LepetitAtelierd-amy';
