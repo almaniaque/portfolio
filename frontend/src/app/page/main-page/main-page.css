@@ -11,5 +11,5 @@
 }
 .accord-preview .face--front { display: grid; place-items: center; background: radial-gradient(ellipse at 75% 20%, #17213c, #05080d 72%); }
 .accord-preview .face--front img { width: 56%; height: 56%; object-fit: contain; object-position: center; }
-.accord-preview .face--back { overflow: hidden; background: #05080d; }
-.accord-preview iframe { display: block; width: 200%; height: 200%; border: 0; transform: scale(.5); transform-origin: top left; pointer-events: none; }
+.accord-preview .face--back { display: block; overflow: hidden; background: #05080d; }
+.accord-preview iframe { position: absolute; top: 0; left: 0; display: block; width: 200%; height: 200%; max-width: none; max-height: none; border: 0; transform: scale(.5); transform-origin: top left; pointer-events: none; }
