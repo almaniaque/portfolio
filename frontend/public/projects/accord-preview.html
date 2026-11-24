@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Accord — bêta 15.12.2026</title>
+<style>
+*{box-sizing:border-box}
+:root{--bg:#05080d;--text:#f2f5fb;--muted:#98a3b5;--line:rgba(255,255,255,.13);--accent:#6f84ff}
+body{margin:0;background:radial-gradient(circle at 78% 18%,rgba(70,92,190,.12),transparent 30%),#05080d;color:var(--text);font-family:Inter,system-ui,sans-serif}
+.container{width:min(calc(100% - 48px),1220px);margin:auto}
+header{padding-top:24px}
+nav{height:68px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:760}.brand svg{width:38px;height:38px}
+.meta{font:12px ui-monospace,monospace;color:#919cad}.meta b{color:#f2f5fb}
+main{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding:110px 0 90px}
+.hero{grid-column:1/span 8}.over{font:700 11px ui-monospace,monospace;letter-spacing:.18em;text-transform:uppercase;color:#a9b6ff}
+h1{font-size:clamp(65px,8.5vw,125px);line-height:.83;letter-spacing:-.085em;margin:26px 0 0;max-width:900px}h1 span{color:#8793ad}
+.copy{display:grid;grid-template-columns:1fr 190px;gap:34px;margin:44px 0 0 100px;max-width:690px;color:var(--muted);line-height:1.7}.launch{border-left:1px solid var(--line);padding-left:18px;font-size:13px}.launch b{display:block;color:white;margin-top:6px}
+.release{grid-column:10/13;align-self:end}.date{font-size:120px;line-height:.75;font-weight:760;letter-spacing:-.09em}.month{text-transform:uppercase;font-size:15px;margin-left:14px}.month small{display:block;color:var(--muted);margin-top:7px}
+.datewrap{display:flex;align-items:flex-end}.rule{height:1px;background:var(--line);margin:30px 0 18px}.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.count b{display:block;font:500 28px ui-monospace,monospace}.count span{font-size:10px;text-transform:uppercase;color:#687386}
+.principles{grid-column:1/13;border-block:1px solid var(--line);margin-top:28px}.principles article{display:grid;grid-template-columns:70px 1fr;padding:26px 0}.principles article+article{border-top:1px solid rgba(255,255,255,.07)}.principles small{color:#7180b7}.principles h2{margin:0;font-size:23px}.principles p{color:var(--muted);max-width:560px;margin:7px 0 0;line-height:1.6}
+.signup{grid-column:1/13;display:grid;grid-template-columns:4fr 7fr;gap:100px;align-items:end;margin-top:15px}.signup h2{font-size:62px;line-height:.92;letter-spacing:-.06em;margin:14px 0}.signup h2 span{display:block;color:#8f9ab3}.signup p{color:var(--muted);line-height:1.6}
+form label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}.control{display:grid;grid-template-columns:1fr auto;border-bottom:1px solid rgba(255,255,255,.3)}input{height:66px;background:none;border:0;color:white;font-size:22px;outline:0}button{background:none;border:0;color:white;font-weight:700;display:flex;align-items:center;gap:16px;cursor:pointer}button i{font-style:normal;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:white;color:#111827}
+footer{border-top:1px solid rgba(255,255,255,.08);padding:26px 0;margin-top:30px;color:#667183;font-size:12px}
+@media(max-width:760px){.container{width:calc(100% - 30px)}main{display:block;padding-top:60px}.copy{margin-left:0;grid-template-columns:1fr}.release{margin-top:60px}.principles{margin-top:60px}.signup{display:block;margin-top:60px}.signup form{margin-top:35px}.control{grid-template-columns:1fr}.control button{height:60px;border-top:1px solid rgba(255,255,255,.08);justify-content:space-between}h1{font-size:17vw}.date{font-size:105px}.count{grid-template-columns:repeat(2,1fr)}}
+
+/* Présentation du programme bêta et des soutiens volontaires */
+.beta-support{grid-column:1/13;border:1px solid rgba(169,182,255,.22);border-radius:18px;padding:32px 36px;background:linear-gradient(125deg,rgba(105,125,255,.09),rgba(255,255,255,.015))}
+.beta-support h2{font-size:clamp(27px,4vw,44px);line-height:1.12;letter-spacing:-.045em;margin:16px 0}.beta-support h2 span{color:#a9b6ff}.beta-support p{max-width:850px;color:#aab5c6;line-height:1.65}.beta-support small{display:block;margin-top:18px;color:#8996ae;line-height:1.5}
+@media(max-width:760px){.beta-support{margin-top:50px;padding:25px 22px}}
+</style>
+</head>
+<body>
+<header><nav class="container"><div class="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><rect width="48" height="48" rx="10" fill="#08121a"/><path d="M10 33 23 10h6L17 33zm13 0 6-11 9 11z" fill="#55e5e9"/></svg>Accord</div><div class="meta">BÊTA · <b>15.12.2026</b></div></nav></header>
+<main class="container">
+<section class="hero"><div class="over">NeoForge Studio · Accord</div><h1>Gérer.<br><span>Sans subir</span><br>l’administratif.</h1><div class="copy"><p>Accord rassemble l’essentiel d’une activité professionnelle dans une interface pensée pour réduire les manipulations inutiles et rendre les décisions plus lisibles.</p><p class="launch">La bêta ouvre le<b>15 décembre 2026.</b><b style="color:#a9b6ff;margin-top:10px">Fonctionnalités disponibles gratuites pendant la bêta</b></p></div></section>
+<aside class="release"><div style="font:11px ui-monospace;color:#677285;letter-spacing:.16em;text-transform:uppercase;margin-bottom:17px">Bêta publique</div><div class="datewrap"><div class="date">15</div><div class="month">décembre<small>2026</small></div></div><div class="rule"></div><div class="count"><div><b>—</b><span>jours</span></div><div><b>—</b><span>heures</span></div><div><b>—</b><span>min</span></div><div><b>—</b><span>sec</span></div></div></aside>
+<section class="principles"><article><small>01</small><div><h2>Créer sans ressaisir.</h2><p>Clients, devis et facturation doivent suivre le travail, pas l’inverse.</p></div></article><article><small>02</small><div><h2>Voir avant de chercher.</h2><p>Les échéances et les informations utiles doivent être visibles au bon moment.</p></div></article><article><small>03</small><div><h2>Automatiser ce qui n’a pas besoin de vous.</h2><p>Accord vise à réduire les tâches répétitives tout en gardant les décisions importantes sous votre contrôle.</p></div></article></section>
+<section class="beta-support" aria-labelledby="beta-support-title"><div class="over">Une bêta construite avec vous</div><h2 id="beta-support-title">Gratuite à utiliser. Libre à soutenir.</h2><p>Toutes les fonctionnalités disponibles pendant la bêta seront gratuites. Si Accord vous est utile, vous pourrez soutenir volontairement son développement par un don, sans obligation ni fonctionnalité réservée aux donateurs.</p><p>La version opérationnelle sera lancée après analyse des retours utilisateurs et corrections nécessaires. Aucune date commerciale n’est annoncée à ce stade.</p><small>Les dons seront disponibles après l’activation d’un paiement sécurisé. Aucun don n’est collecté sur cette page.</small></section>
+<section class="signup"><div><div class="over">Préinscription bêta</div><h2>Être là<span>dès l’ouverture.</span></h2><p>Préinscrivez-vous pour accéder à la bêta gratuite dès son ouverture. Vos retours permettront de préparer la version opérationnelle.</p></div><div aria-hidden="true"><p>Votre e-mail professionnel</p><div class="control"><span>vous@entreprise.fr</span><span>Je me préinscris ↗</span></div></div></section>
+</main>
+<footer><div class=container>NeoForge Studio · Accord · bêta 2026</div></footer>
+
+</body></html>
