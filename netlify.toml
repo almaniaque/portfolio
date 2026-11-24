@@ -1,0 +1,7 @@
+[build]
+  base = "frontend"
+  command = "npm run build -- --output-mode=static"
+  publish = "dist/Portfolio/browser"
+
+[build.environment]
+  NODE_VERSION = "24.20.0"
